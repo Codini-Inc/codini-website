@@ -1,14 +1,13 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
 import cn from 'classnames';
 
 import styles from './Footer.module.css';
 
 import Logo from '../../assets/icons/logo.svg';
-import Twitter from '../../assets/icons/twitter.svg';
+import Instagram from '../../assets/icons/instagram.svg';
 import Facebook from '../../assets/icons/facebook.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
-import Instagram from '../../assets/icons/instagram.svg';
+import TikTok from '../../assets/icons/tiktok.svg';
 
 const Footer: NextPage = () => {
   return (
@@ -28,7 +27,7 @@ const Footer: NextPage = () => {
           
 
           <div className={styles.footer__copyright}>
-            © Copyright 2020 Pitch Software GmbH.
+            © Copyright 2024 Codini.
           </div>
           <div className={styles.footer__copyright}>All rights reserved.</div>
         </div>
@@ -51,16 +50,6 @@ const Footer: NextPage = () => {
           <a
             href="/blog"
             className={styles.footer__link}>Blog</a>
-
-          <a href="#" className={styles.footer__link}>
-            Jobs
-          </a>
-          <a href="#" className={styles.footer__link}>
-            What’s New
-          </a>
-          <a href="#" className={styles.footer__link}>
-            Press Room
-          </a>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Legal</h6>
@@ -69,18 +58,6 @@ const Footer: NextPage = () => {
           </a>
           <a href="#" className={styles.footer__link}>
             Privacy Policy
-          </a>
-          <a href="#" className={styles.footer__link}>
-            Terms of Use
-          </a>
-          <a href="#" className={styles.footer__link}>
-            DPA
-          </a>
-          <a href="#" className={styles.footer__link}>
-            DMCA Policy
-          </a>
-          <a href="#" className={styles.footer__link}>
-            ERDF Support
           </a>
         </div>
         <div className={styles.footer__sm}>
@@ -91,7 +68,8 @@ const Footer: NextPage = () => {
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
-                <Twitter />
+         
+                <Facebook />
               </div>
             </a>
             <a
@@ -99,7 +77,7 @@ const Footer: NextPage = () => {
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
-                <Facebook />
+              <Instagram />
               </div>
             </a>
             <a
@@ -115,7 +93,7 @@ const Footer: NextPage = () => {
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
-                <Instagram />
+                <TikTok />
               </div>
             </a>
           </div>

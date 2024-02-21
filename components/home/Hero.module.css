@@ -133,7 +133,7 @@
 .hero__intro {
     position: absolute;
     left: 50%;
-    top: 32vh;
+    top: 25vh;
     z-index: 1;
     width: 80vw;
     max-width: 42ch;
@@ -162,7 +162,7 @@
 .hero__headline-text {
     display: block;
     color: #334ac0;
-    font-size: 10vw;
+    font-size: 9vw;
     line-height: 0.95em;
     text-align: center;
 }

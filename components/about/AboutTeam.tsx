@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import cn from 'classnames';
 
 import styles from './AboutTeam.module.css';
-import Twitter from '../../assets/icons/twitter.svg';
+import Twitter from '../../assets/icons/instagram.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
 
 const AboutTeam: NextPage = () => {

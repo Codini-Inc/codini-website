@@ -98,6 +98,7 @@
         padding-right: 10vw;
         padding-left: 10vw;
     }
+
     .footer__wrapper {
         max-width: 100em;
     }
@@ -108,18 +109,21 @@
         padding-right: 4vw;
         padding-left: 4vw;
     }
+
     .footer__wrapper {
         display: grid;
         grid-auto-columns: 1fr;
         grid-column-gap: 16px;
         grid-row-gap: 40px;
-        grid-template-areas: "Area Area-2 Area-3" "Area-4 Area-4 .";
+        grid-template-areas: "Area Area-2 Area-3""Area-4 Area-4 .";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
     }
+
     .footer__credits {
         grid-area: Area-4;
     }
+
     .footer__sm {
         grid-area: Area-3;
     }
@@ -127,7 +131,7 @@
 
 @media screen and (max-width: 767px) {
     .footer__wrapper {
-        grid-template-areas: "Area Area-2" "Area-3 ." "Area-4 Area-4";
+        grid-template-areas: "Area Area-2""Area-3 .""Area-4 Area-4";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
     }

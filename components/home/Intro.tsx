@@ -33,58 +33,7 @@ const Intro: NextPage = () => {
 
   return (
     <div className={cn(styles.intro, 'wf-section')}>
-      <div className={styles.intro__logos}>
-        <h5 className={styles['intro__logos-heading']}>Used by teams like</h5>
-        <div className={styles['intro__logos-wrapper']}>
-          <img
-            src="/images/superhuman.svg"
-            alt=""
-            className={cn(
-              styles['intro__logo'],
-              styles['intro__logo--rmargin'],
-            )}
-            width="209"
-            height="16"
-          />
-          <img
-            src="/images/eyeEm.svg"
-            alt=""
-            className={cn(
-              styles['intro__logo'],
-              styles['intro__logo--rmargin'],
-            )}
-            width="97"
-            height="33"
-          />
-          <img
-            src="/images/chart-mogul.svg"
-            alt=""
-            className={cn(
-              styles['intro__logo'],
-              styles['intro__logo--rmargin'],
-            )}
-            width="140"
-            height="26"
-          />
-          <img
-            src="/images/notion.svg"
-            alt=""
-            className={cn(
-              styles['intro__logo'],
-              styles['intro__logo--rmargin'],
-            )}
-            width="53"
-            height="56"
-          />
-          <img
-            src="/images/dashdash.svg"
-            alt=""
-            className={styles.intro__logo}
-            width="149"
-            height="19"
-          />
-        </div>
-      </div>
+   
       <div className={styles.intro__workflow}>
         <div ref={workflowRef} className={styles['intro__workflow-text']}>
           <h2 className={styles['intro__workflow-heading']}>

@@ -31,13 +31,13 @@ const Hero: NextPage = () => {
           <div className={styles['hero__scroll-container']}>
             <div className={styles['hero__transform-target']}>
               <p className={styles.hero__intro}>
-                Pitch helps teams build better presentations:
+                Codini helps business create
                 <br />
-                collaboratively, effectively, and beautifully.
+                websites, mobile apps, and everything in between.
               </p>
               <div className={styles.hero__headline}>
                 <h1 className={styles['hero__headline-text']}>
-                  All hands on deck.
+                 You think We create
                 </h1>
                 <img
                   src="/images/hero-hands.png"
