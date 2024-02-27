@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  output: 'out',
+  output: 'export',
   images: {
     loader: 'imgix',
     path: '/codini-website',
