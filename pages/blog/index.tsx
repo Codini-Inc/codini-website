@@ -12,7 +12,7 @@ const Blog: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Codini | You think, we create.</title>
+        <title>Codini | blog</title>
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Codini Website" />
         <meta property="og:title" content="Codini | Blog" />

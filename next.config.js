@@ -3,7 +3,7 @@ module.exports = {
   output: 'out',
   images: {
     loader: 'imgix',
-    path: 'https://noop/',
+    path: '/codini-website',
   },
   reactStrictMode: true,
   webpack(config) {
@@ -13,12 +13,5 @@ module.exports = {
     });
 
     return config;
-
   },
-
-
-
-
-
-}
-
+};
