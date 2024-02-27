@@ -11,7 +11,7 @@ const AboutIntro: NextPage = () => {
           Every day, ideas are born. Ideas to start a business. Change a
           community. Transform the world. But ideas alone are not enough.
           <br />‍<br />
-          Pitch began with a belief that when people come together around an
+          Codini began with a belief that when people come together around an
           idea, and are empowered by the right software, great things can
           happen. Great is more than the sum of its parts: just like a great
           team is more than a collection of individuals and great presentations

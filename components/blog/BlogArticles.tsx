@@ -9,7 +9,7 @@ const articles1 = [
   {
     index: 1,
     heading: `A new look &amp; new ways to collaborate`,
-    paragraph: `We&#x27;re debuting a new look for Pitch, and with it, new ways to
+    paragraph: `We&#x27;re debuting a new look for Codini, and with it, new ways to
     collaborate and create presentations faster than ever before.`,
   },
   {
@@ -20,8 +20,8 @@ const articles1 = [
   },
   {
     index: 3,
-    heading: `How Supercast raised $2 million with Pitch`,
-    paragraph: `From side project to startup — How Supercast used Pitch to raise $2M
+    heading: `How Supercast raised $2 million with Codini`,
+    paragraph: `From side project to startup — How Supercast used Codini to raise $2M
     and spin off a big idea into a new business`,
   },
 ];
@@ -30,7 +30,7 @@ const articles2 = [
   {
     index: 4,
     heading: `Why you should build features users don&#x27;t ask for`,
-    paragraph: `How we use Pitch at Pitch, and the different ways we weave user
+    paragraph: `How we use Codini at Codini, and the different ways we weave user
     research into the fabric of our company culture`,
   },
   {
@@ -43,7 +43,7 @@ const articles2 = [
   {
     index: 6,
     heading: `Designing in the open: How we make design accessible`,
-    paragraph: `Our Head of Design shares how Pitch builds an open design culture
+    paragraph: `Our Head of Design shares how Codini builds an open design culture
     that encourages collaboration across the company.`,
   },
 ];
@@ -60,12 +60,12 @@ const articles3 = [
     index: 8,
     heading: `Shining a spotlight on our beta users`,
     paragraph: `We’re ready to showcase how some of our very first users are using
-    Pitch to raise money, work faster, and communicate more
+    Codini to raise money, work faster, and communicate more
     effectively.`,
   },
   {
     index: 9,
-    heading: `Our plans for Pitch in 2020`,
+    heading: `Our plans for Codini in 2020`,
     paragraph: `We’ve been busy behind the scenes working to build the future of
     presentations. It’s time to give you a peek at what we’ve been up
     to and share what’s coming next in 2020.`,
@@ -83,13 +83,13 @@ const articles4 = [
   {
     index: 11,
     heading: `Announcing our limited preview beta &amp; new funding`,
-    paragraph: `We&#x27;re inviting the first teams and companies to use Pitch,
+    paragraph: `We&#x27;re inviting the first teams and companies to use Codini,
     opening up our invite-only beta with the help of some additional
     funding.`,
   },
   {
     index: 12,
-    heading: `Pitch raises $19M from Index, Slack &amp; more`,
+    heading: `Codini raises $19M from Index, Slack &amp; more`,
     paragraph: `Today we are proud to announce a $19M Series A, led by Index
     Ventures and our existing investor BlueYard.`,
   },

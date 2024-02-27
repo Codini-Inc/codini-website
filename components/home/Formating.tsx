@@ -47,7 +47,7 @@ const Formating: NextPage = () => {
           </p>
           <p className={styles.formatting__paragraph}>
             Whether you’re a casual builder or you work on slides every day,
-            Pitch gives your team design superpowers.
+            Codini gives your team design superpowers.
             <br />
           </p>
         </div>

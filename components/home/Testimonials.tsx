@@ -61,7 +61,7 @@ const Testimonials: NextPage = () => {
         <div className={styles.testimonials__card}>
           <div className={styles['testimonials__card-content']}>
             <div className={styles['testimonials__card-blockquote']}>
-              Pitch makes all of my presentations look like I have a full-time
+            Codini makes all of my presentations look like I have a full-time
               design team supporting me.
             </div>
             <div className={styles['testimonials__card-info']}>

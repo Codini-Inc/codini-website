@@ -18,7 +18,7 @@ const BlogHero: NextPage = () => {
             </h2>
           </a>
           <p className={styles['blog-hero__paragraph']}>
-            Presentations aren&#x27;t just for pitch decks: How modern,
+            Presentations aren&#x27;t just for Codini decks: How modern,
             remote-optimized teams are using presentations for knowledge
             sharing, brainstorming, and more.
           </p>

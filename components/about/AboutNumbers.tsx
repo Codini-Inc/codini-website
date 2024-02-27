@@ -7,7 +7,7 @@ const AboutNumbers: NextPage = () => {
   return (
     <div className={cn(styles['about-numbers'], 'wf-section')}>
       <div className={styles['about-numbers__container']}>
-        <h2 className={styles['about-numbers__heading']}>Pitch in numbers:</h2>
+        <h2 className={styles['about-numbers__heading']}>Codini in numbers:</h2>
         <div className={styles['about-numbers__wrapper']}>
           <h4 className={styles['about-numbers__metric']}>2018</h4>
           <h4 className={styles['about-numbers__metric']}>$50M</h4>

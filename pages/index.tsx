@@ -16,10 +16,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Pitch | Home</title>
+        <title>Codini | Home</title>
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Clone Website" />
-        <meta property="og:title" content="Pitch | Home" />
+        <meta property="og:description" content="Codini Website" />
+        <meta property="og:title" content="Codini | Home" />
       </Head>
       <Hero />
       <Intro />

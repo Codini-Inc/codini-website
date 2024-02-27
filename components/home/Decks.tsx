@@ -75,7 +75,7 @@ const Decks: NextPage = () => {
         </h2>
         <p className={styles['decks__text-paragraph']}>
           Pick from our library of custom-crafted templates or create your own.
-          Manage your company assets directly within Pitch to ensure
+          Manage your company assets directly within Codini to ensure
           presentations look great and stay on brand.
         </p>
       </div>

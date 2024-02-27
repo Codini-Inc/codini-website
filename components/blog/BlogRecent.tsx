@@ -79,7 +79,7 @@ const BlogRecent: NextPage = () => {
               </h4>
             </a>
             <p className={styles['blog-recent__paragraph']}>
-              Pitch engineer and Counter-Strike world champion Jeremy Vuillermet
+            Codini engineer and Counter-Strike world champion Jeremy Vuillermet
               shares how gaming concepts influenced our quick menu
             </p>
           </div>
@@ -105,7 +105,7 @@ const BlogRecent: NextPage = () => {
               )}
             >
               <h4 className={styles['blog-recent__heading']}>
-                Why we redesigned Pitch before we launched
+                Why we redesigned Codini before we launched
               </h4>
             </a>
             <p className={styles['blog-recent__paragraph']}>

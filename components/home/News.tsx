@@ -34,7 +34,7 @@ const News: NextPage = () => {
               className={cn(styles['news__card-linkh'], 'w-inline-block')}
             >
               <h3 className={styles['news__card-heading']}>
-                Our plans for Pitch in 2020
+                Our plans for Codini in 2020
               </h3>
             </a>
             <img

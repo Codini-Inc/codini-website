@@ -12,10 +12,10 @@ const Blog: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Pitch | Blog</title>
+        <title>Codini | You think, we create.</title>
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Clone Website" />
-        <meta property="og:title" content="Pitch | Blog" />
+        <meta property="og:description" content="Codini Website" />
+        <meta property="og:title" content="Codini | Blog" />
       </Head>
       <BlogHero />
       <BlogRecent />
