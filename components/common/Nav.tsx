@@ -259,6 +259,7 @@ const Nav: NextPage = () => {
                 <p className={styles['nav__link-jobs-counter']}>8</p>
               </div>
             </a>
+            <a href="/contact">contact</a>
           </nav>
           <div
             id="w-node-_32e10129-2707-fa69-8e71-2a2e29fe89df-29fe89b6"
