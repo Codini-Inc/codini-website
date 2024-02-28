@@ -9,7 +9,7 @@ export const Contact: React.FC = () => {
         <meta property="og:description" content="Codini Website" />
         <meta property="og:title" content="Codini | Home" />
       </Head>
-      <main className=''>
+      <main className=' bg-black'>
         <h1>Contact</h1>
         <div></div>
         <div></div>
