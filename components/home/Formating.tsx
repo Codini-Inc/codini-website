@@ -16,7 +16,7 @@ const Formating: NextPage = () => {
       duration: 1.2,
       scrub: false,
       toggleActions: 'play none none reset',
-      delay: 1,
+      delay: 0,
     });
 
     const snapAnimation = loadAnimation(snapLottie, styles.formatting__lottie);
@@ -32,24 +32,18 @@ const Formating: NextPage = () => {
       <div className={styles.formatting__wrapper}>
         <div className={styles.formatting__lottie}></div>
         <div className={styles.formatting__text}>
-          <h2 className={styles.formatting__heading}>
-            Formatting that’s effortless
-          </h2>
-          <p
+          <h4 className={styles.formatting__heading}>
+            An average agency takes 80 days to create an ecommerce website
+          </h4>
+          <h2
             className={cn(
               styles.formatting__paragraph,
               styles['formatting__paragraph--space'],
             )}
           >
-            Work on your story — we’ll take care of the rest. Pitch’s smart
-            formatting options turn raw ideas into stunning slides.
+            We do it in 30.
             <br />
-          </p>
-          <p className={styles.formatting__paragraph}>
-            Whether you’re a casual builder or you work on slides every day,
-            Codini gives your team design superpowers.
-            <br />
-          </p>
+          </h2>
         </div>
       </div>
     </div>

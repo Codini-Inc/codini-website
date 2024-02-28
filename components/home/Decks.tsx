@@ -71,12 +71,10 @@ const Decks: NextPage = () => {
     <div className={cn(styles.decks, 'wf-section')}>
       <div ref={decksTextRef} className={styles.decks__text}>
         <h2 className={styles['decks__text-heading']}>
-          From draft to deck in no time
+          Our latest projects
         </h2>
         <p className={styles['decks__text-paragraph']}>
-          Pick from our library of custom-crafted templates or create your own.
-          Manage your company assets directly within Codini to ensure
-          presentations look great and stay on brand.
+          We've created a mobile app in Miami, a CMS in Belgrade, a SAAS in Mumbai, a Webapp in Tunisia. <br></br><b>Time to build yours now!</b>
         </p>
       </div>
       <div ref={decksWrapperRef} className={styles.decks__wrapper}>

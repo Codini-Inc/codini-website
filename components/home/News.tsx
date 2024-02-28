@@ -34,7 +34,7 @@ const News: NextPage = () => {
               className={cn(styles['news__card-linkh'], 'w-inline-block')}
             >
               <h3 className={styles['news__card-heading']}>
-                Our plans for Codini in 2020
+              An average website loads in 2.5 seconds , we do it in 2.2 seconds.
               </h3>
             </a>
             <img
@@ -65,13 +65,9 @@ const News: NextPage = () => {
                 styles['news__card-heading--white'],
               )}
             >
-              Introducing Constant Change
+              We created websites for Hospitals, Universities, Entrepreneurs and Creatives.
             </h3>
-            <p className={styles['news__card-paragraph']}>
-              How do you keep up in a modern workplace where the only constant
-              is change? Constant Change is a new email series that explores how
-              the past informs the future.
-            </p>
+         
           </div>
           <a
             href="#"
@@ -83,7 +79,7 @@ const News: NextPage = () => {
                 styles['news__card-buttontext--white'],
               )}
             >
-              Learn more
+              Get yours
             </div>
             <div
               className={cn(

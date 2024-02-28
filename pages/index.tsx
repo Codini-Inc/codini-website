@@ -22,10 +22,10 @@ const Home: NextPage = () => {
         <meta property="og:title" content="Codini | Home" />
       </Head>
       <Hero />
-      <Intro />
-      <Decks />
       <Formating />
+      <Decks />
       <Integrations />
+      {/* <Intro /> */}
       <Sharing />
       <News />
       <Testimonials />

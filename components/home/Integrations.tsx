@@ -36,13 +36,14 @@ const Integrations: NextPage = () => {
       <div className={styles.integrations__wrapper}>
         <div ref={integrationsTextRef} className={styles.integrations__text}>
           <h2 className={styles['integrations__text-heading']}>
-            Connected to what matters
+            Scalable solutions
           </h2>
           <p className={styles['integrations__text-paragraph']}>
-            Knowledge isn’t static — why should your presentations be? We
-            integrate with the tools you rely on every day to keep information
-            and conversations up-to-date, turning presentations into living
-            documents.
+            An average website loads in <b>2.5 seconds</b> , we do it in <b>2.2 seconds</b>.
+          </p>
+          <br></br>
+          <p className={styles['integrations__text-paragraph']}>
+            An average website loads in 2.6 seconds, we do it in 2.2 seconds.
           </p>
         </div>
         <div ref={lottieRef} className={styles.integrations__lottie}></div>
