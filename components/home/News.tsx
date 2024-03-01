@@ -33,25 +33,23 @@ const News: NextPage = () => {
               href="#"
               className={cn(styles['news__card-linkh'], 'w-inline-block')}
             >
+                <h4  className={cn(
+                styles['news__card-paragraph--white'],
+              )}>
+              An average website loads in 2.5 seconds
+              </h4>
               <h3 className={styles['news__card-heading']}>
-              An average website loads in 2.5 seconds , we do it in 2.2 seconds.
+              We do it in 2.2 seconds.
               </h3>
             </a>
-            <img
-              src="/images/stealthreveal_header_thumbnail.jpg"
-              srcSet="/images/stealthreveal_header_thumbnail-p-500.jpeg 500w, /images/stealthreveal_header_thumbnail-p-800.jpeg 800w, /images/stealthreveal_header_thumbnail-p-1080.jpeg 1080w, /images/stealthreveal_header_thumbnail.jpg 1370w"
-              sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, (max-width: 991px) 76vw, (max-width: 1279px) 32vw, (max-width: 1919px) 29vw, 544.984375px"
-              alt=""
-              className={styles['news__card-image']}
-              //   width="1370"
-              //   height="920"
-            />
           </div>
+          
+          <h5 className={cn(styles['main-color-paragraph'])}>Wanna see it yourself?</h5>
           <a
             href="#"
             className={cn(styles['news__card-button'], 'w-inline-block')}
           >
-            <div className={styles['news__card-buttontext']}>Read more</div>
+            <div className={styles['news__card-buttontext']}>Speed test</div>
             <div className={cn(styles['news__card-buttonarrow'], 'w-embed')}>
               <CardButtonarrow />
             </div>
@@ -59,16 +57,20 @@ const News: NextPage = () => {
         </div>
         <div className={cn(styles.news__card, styles['news__card--purple'])}>
           <div className={styles['news__card-content']}>
-            <h3
-              className={cn(
+              <h4  className={cn(
+                styles['news__card-paragraph'],
+                styles['news__card-paragraph--white'],
+              )}>
+              We created websites for 
+              </h4>
+              <h3     className={cn(
                 styles['news__card-heading'],
                 styles['news__card-heading--white'],
-              )}
-            >
-              We created websites for Hospitals, Universities, Entrepreneurs and Creatives.
-            </h3>
-         
+              )}>
+              Hospitals, Universities, Entrepreneurs and Creatives.
+              </h3>
           </div>
+          <h5 className={cn(styles['white-paragraph'],)}>Interested already?</h5>
           <a
             href="#"
             className={cn(styles['news__card-button'], 'w-inline-block')}
