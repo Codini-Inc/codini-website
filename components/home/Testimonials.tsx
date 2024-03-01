@@ -6,7 +6,7 @@ import styles from './Testimonials.module.css';
 const Testimonials: NextPage = () => {
   return (
     <div className={cn(styles.testimonials, 'wf-section')}>
-      <h2 className={styles.testimonials__heading}>What others are saying</h2>
+      <h2 className={styles.testimonials__heading}>What our clients think</h2>
       <div className={styles.testimonials__wrapper}>
         <div className={styles.testimonials__card}>
           <div className={styles['testimonials__card-content']}>
@@ -25,10 +25,10 @@ const Testimonials: NextPage = () => {
                 // height="120"
               />
               <h4 className={styles['testimonials__card-heading']}>
-                Rahul Vohra
+                Karim Bouattour
               </h4>
               <div className={styles['testimonials__card-role']}>
-                Founder of Superhuman
+                Head of SOTCOT, Tunisia
               </div>
             </div>
           </div>
@@ -50,10 +50,10 @@ const Testimonials: NextPage = () => {
                 // height="120"
               />
               <h4 className={styles['testimonials__card-heading']}>
-                Aidan Hornsby
+                Roy Arwas
               </h4>
               <div className={styles['testimonials__card-role']}>
-                Founder of DoubleUp
+                CEO at CXE, Miami
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Testimonials: NextPage = () => {
             </div>
             <div className={styles['testimonials__card-info']}>
               <img
-                src="/images/shane.jpg"
+                src="/images/testimonial-3-avatar.jpeg"
                 loading="lazy"
                 alt=""
                 className={styles['testimonials__card-photo']}
@@ -74,10 +74,10 @@ const Testimonials: NextPage = () => {
                 // height="120"
               />
               <h4 className={styles['testimonials__card-heading']}>
-                Shane Parrish
+                Benedict Rees
               </h4>
               <div className={styles['testimonials__card-role']}>
-                Founder of Farnam Street
+                CEO at CPP, London
               </div>
             </div>
           </div>
