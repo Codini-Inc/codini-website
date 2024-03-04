@@ -16,6 +16,12 @@ const Hero: NextPage = () => {
       start: 0,
       end: 17,
     });
+    animateFromTo(styles.hero__hand, {
+      from: { y: 0 },
+      to: { y: -1150 },
+      start: 0,
+      end: 17,
+    });
     animateFromTo(styles['hero__transform-target'], {
       from: { x: '0.054%', y: 0, scale: 1 },
       to: { x: '2%', y: 60, scale: 0.519937 },

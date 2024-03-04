@@ -41,12 +41,10 @@ const Sharing: NextPage = () => {
     <div className={cn(styles.sharing, 'wf-section')}>
       <div ref={sharingTextRef} className={styles.sharing__text}>
         <h2 className={styles['sharing__text-heading']}>
-          Ideas that can go anywhere
+          It all starts with an idea
         </h2>
         <p className={styles['sharing__text-paragraph']}>
-          There are no limits to how — and with whom — you can share. Present to
-          a client or at a conference. Keep presentations private for your team,
-          or publish them for the whole world to see.
+          Most of our clients started with an idea, that we've built models for, developed its code, and made sure to keep it maintained.
         </p>
       </div>
       <div className={styles.sharing__wrapper}>
@@ -69,20 +67,6 @@ const Sharing: NextPage = () => {
             // height="60"
           />
         </div>
-        <img
-          src="/images/invite@2x.png"
-          alt=""
-          className={styles.sharing__invite}
-          //   width="800"
-          //   height="412"
-        />
-        <img
-          src="/images/access.svg"
-          alt=""
-          className={styles.sharing__access}
-          //   width="382"
-          //   height="115"
-        />
         <img
           src="/images/hand_600w.png"
           alt=""

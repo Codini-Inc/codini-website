@@ -51,9 +51,6 @@ export const Contact: React.FC = () => {
           <button type='submit' className='px-4 py-2 w-24 bg-gray-700 text-white font-medium rounded'>Send</button>
         </form >
         <p>Please fill in the form below</p>
-        <div></div>
-        <div></div>
-        <div></div>
       </div >
     </>
   );

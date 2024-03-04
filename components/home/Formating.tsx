@@ -41,7 +41,7 @@ const Formating: NextPage = () => {
               styles['formatting__paragraph--space'],
             )}
           >
-            We do it in 30.
+            We do it in 30 days.
             <br />
           </h2>
         </div>

@@ -46,7 +46,7 @@ const News: NextPage = () => {
           
           <h5 className={cn(styles['main-color-paragraph'])}>Wanna see it yourself?</h5>
           <a
-            href="#"
+            href="https://pagespeed.web.dev/" target='_blank'
             className={cn(styles['news__card-button'], 'w-inline-block')}
           >
             <div className={styles['news__card-buttontext']}>Speed test</div>
@@ -72,7 +72,7 @@ const News: NextPage = () => {
           </div>
           <h5 className={cn(styles['white-paragraph'],)}>Interested already?</h5>
           <a
-            href="#"
+            href="/contact"
             className={cn(styles['news__card-button'], 'w-inline-block')}
           >
             <div
