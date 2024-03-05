@@ -16,7 +16,7 @@ const BlogRecent: NextPage = () => {
       delay: 0.3,
       duration: 0.6,
     });
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={cn(styles['blog-recent'], 'wf-section')}>
@@ -79,8 +79,7 @@ const BlogRecent: NextPage = () => {
               </h4>
             </a>
             <p className={styles['blog-recent__paragraph']}>
-            Codini engineer and Counter-Strike world champion Jeremy Vuillermet
-              shares how gaming concepts influenced our quick menu
+            Codini engineer and Counter-Strike world champion Jeremy Vuillermet shares how gaming concepts influenced our quick menu
             </p>
           </div>
           <div className={styles['blog-recent__wrapper']}>

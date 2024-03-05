@@ -27,7 +27,7 @@ const BlogArticle = ({
         duration: 0.3,
       });
     }
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={styles['blog-articles__article']}>

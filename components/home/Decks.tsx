@@ -4,6 +4,7 @@ import cn from 'classnames';
 import styles from './Decks.module.css';
 import { useEffect, useRef } from 'react';
 import useAnimation from '../../hooks/useAnimation';
+import CardButtonarrow from '../../assets/icons/card-buttonarrow.svg';
 
 const Decks: NextPage = () => {
   const decksTextRef = useRef<HTMLDivElement>(null);
@@ -74,8 +75,19 @@ const Decks: NextPage = () => {
           Our latest projects
         </h2>
         <p className={styles['decks__text-paragraph']}>
-          We've created a mobile app in Miami, a CMS in Belgrade, a SAAS in Mumbai, a Webapp in Tunisia. <br></br><b>Time to build yours now!</b>
+          We've created a mobile app in Miami, a CMS in Belgrade, a SAAS in Mumbai, a Webapp in Tunisia. <br></br>
         </p>
+        <center>
+        <a
+            href="#"
+            className={cn(styles['news__card-button'], 'w-inline-block')}
+          >
+            <div className={styles['news__card-buttontext']}><b>Discover our projects!</b></div>
+            <div className={cn(styles['news__card-buttonarrow'], 'w-embed')}>
+              <CardButtonarrow />
+            </div>
+          </a>
+          </center>
       </div>
       <div ref={decksWrapperRef} className={styles.decks__wrapper}>
         <div className={cn(styles.decks__grid, styles['decks__grid--margin'])}>
@@ -117,7 +129,7 @@ const Decks: NextPage = () => {
         </div>
         <div className={cn(styles.decks__grid, styles['decks__grid--margin'])}>
           <img
-            src="/images/slide06_720w.jpg"
+            src="/images/slide06_720w.png"
             alt=""
             className={cn(styles.decks__img, styles['decks__img--margin'])}
             // width="720"

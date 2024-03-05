@@ -132,7 +132,7 @@ const Nav: NextPage = () => {
             </a>
             <div className={styles['nav__link-div-jobs']}>
               <a
-                href="#"
+                href="/contact"
                 className={cn(
                   styles['nav__link-div-jobstext'],
                   'w-inline-block',
