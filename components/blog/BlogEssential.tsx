@@ -18,7 +18,7 @@ const BlogEssential: NextPage = () => {
       duration: 0.4,
       stagger: 0.4,
     });
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={cn(styles['blog-essential'], 'wf-section')}>

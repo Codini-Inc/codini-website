@@ -15,7 +15,7 @@ const AboutCulture: NextPage = () => {
       start: '-1120',
       duration: 14.5,
     });
-  }, []);
+  },);
 
   return (
     <div className={styles.about__culture}>

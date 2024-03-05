@@ -35,7 +35,7 @@ const Sharing: NextPage = () => {
       start: 0,
       end: 59,
     });
-  }, []);
+  }, );
 
   return (
     <div className={cn(styles.sharing, 'wf-section')}>

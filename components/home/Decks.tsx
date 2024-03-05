@@ -82,7 +82,7 @@ const Decks: NextPage = () => {
             href="#"
             className={cn(styles['news__card-button'], 'w-inline-block')}
           >
-            <div className={styles['news__card-buttontext']}><b>Discover all of our projects!</b></div>
+            <div className={styles['news__card-buttontext']}><b>Discover our projects!</b></div>
             <div className={cn(styles['news__card-buttonarrow'], 'w-embed')}>
               <CardButtonarrow />
             </div>
@@ -129,7 +129,7 @@ const Decks: NextPage = () => {
         </div>
         <div className={cn(styles.decks__grid, styles['decks__grid--margin'])}>
           <img
-            src="/images/slide06_720w.jpg"
+            src="/images/slide06_720w.png"
             alt=""
             className={cn(styles.decks__img, styles['decks__img--margin'])}
             // width="720"

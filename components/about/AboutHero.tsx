@@ -16,7 +16,7 @@ const AboutHero: NextPage = () => {
       end: 100,
       bodySelector: true,
     });
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={cn(styles['about-hero'], 'wf-section')}>

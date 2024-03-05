@@ -25,7 +25,7 @@ const Formating: NextPage = () => {
       scrub: false,
       delay: 1,
     });
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={cn(styles.formatting, 'wf-section')}>

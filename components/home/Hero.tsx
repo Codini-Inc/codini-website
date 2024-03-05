@@ -17,10 +17,12 @@ const Hero: NextPage = () => {
       end: 17,
     });
     animateFromTo(styles.hero__hand, {
-      from: { y: 0 },
-      to: { y: -1150 },
+      // from: { y: 0 },
+      // to: { y: -1150 },
+      from: { opacity: 1 },
+      to: { opacity: 0 },
       start: 0,
-      end: 17,
+      end: 10,
     });
     animateFromTo(styles['hero__transform-target'], {
       from: { x: '0.054%', y: 0, scale: 1 },
@@ -28,7 +30,7 @@ const Hero: NextPage = () => {
       start: 0,
       end: 37,
     });
-  }, []);
+  }, );
 
   return (
     <div className={cn(styles.hero)}>
