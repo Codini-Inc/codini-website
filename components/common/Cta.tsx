@@ -13,11 +13,13 @@ const Cta: NextPage = () => {
         <div className={cn(styles.cta__wrapper)}>
           <div id="email-form" className={styles['cta-div']}>
             <div className={styles['cta__input-wrapper']}>
+              <a href='/contact'>
               <input
                 type="submit"
                 value="Let's start"
                 className={cn(styles.cta__button, 'w-button')}
               />
+              </a>
             </div>
             <div className={styles.cta__disclaimer}>
               We care about protecting your ideas. Here’s our{' '}

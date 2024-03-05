@@ -6,7 +6,6 @@ import Decks from '../components/home/Decks';
 import Footer from '../components/common/Footer';
 import Formating from '../components/home/Formating';
 import Hero from '../components/home/Hero';
-import Integrations from '../components/home/Integrations';
 import Intro from '../components/home/Intro';
 import News from '../components/home/News';
 import Sharing from '../components/home/Sharing';
@@ -29,12 +28,12 @@ const DynamicFormating = dynamic(() => import('../components/home/Formating'), {
   ssr: false,
 });
 
-const DynamicIntegrations = dynamic(
-  () => import('../components/home/Integrations'),
-  {
-    ssr: false,
-  },
-);
+// const DynamicIntegrations = dynamic(
+//   () => import('../components/home/Integrations'),
+//   {
+//     ssr: false,
+//   },
+// );
 
 const DynamicSharing = dynamic(() => import('../components/home/Sharing'), {
   ssr: false,
@@ -73,7 +72,7 @@ const Home: NextPage = () => {
       <DynamicIntro />
       <DynamicDecks />
       <DynamicFormating />
-      <DynamicIntegrations />
+      {/* <DynamicIntegrations /> */}
       <DynamicSharing />
       <DynamicNews />
       <DynamicTestimonials />
@@ -82,12 +81,13 @@ const Home: NextPage = () => {
       {/* <Intro />
       <Decks />
       <Formating />
-      <Integrations />
-      <Sharing />
-      <News />
-      <Testimonials />
-      <Cta />
-      <Footer /> */}
+      <Decks />
+      {/* <Intro /> */}
+      <DynamicSharing />
+      <DynamicNews />
+      <DynamicTestimonials />
+      <DynamicCta />
+      <DynamicFooter /> 
     </>
   );
 };

@@ -88,7 +88,7 @@
 
 .hero__container {
     display: block;
-    height: 150vh;
+    height: 120vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -194,7 +194,7 @@
 
 @media screen and (min-width: 1280px) {
     .hero__container {
-        height: 200vh;
+        height: 140vh;
     }
 
     .hero__cta-section {
@@ -205,7 +205,7 @@
 
 @media screen and (min-width: 1440px) {
     .hero__container {
-        height: 150vh;
+        height: 120vh;
     }
 
     .hero__cta-section {
@@ -258,7 +258,7 @@
     }
 
     .hero__container {
-        height: 300vh;
+        height: 200vh;
     }
 }
 
@@ -277,7 +277,7 @@
     }
 
     .hero__container {
-        height: 150vh;
+        height: 120vh;
     }
 
     .hero__cta-section {

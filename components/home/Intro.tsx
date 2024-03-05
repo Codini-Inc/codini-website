@@ -29,7 +29,7 @@ const Intro: NextPage = () => {
       duration: 7.63,
       once: true,
     });
-  }, []);
+  }, );
 
   return (
     <div className={cn(styles.intro, 'wf-section')}>

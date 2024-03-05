@@ -17,7 +17,7 @@ const NewsletterCta: NextPage = () => {
       delay: 0.3,
       duration: 0.5,
     });
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={cn(styles['newsletter-cta'], 'wf-section')}>

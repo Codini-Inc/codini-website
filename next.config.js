@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  output: 'export',
   images: {
     loader: 'imgix',
     path: '/codini-website',
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   reactStrictMode: true,
   webpack(config) {

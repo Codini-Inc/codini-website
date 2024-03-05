@@ -16,13 +16,21 @@ const Hero: NextPage = () => {
       start: 0,
       end: 17,
     });
+    animateFromTo(styles.hero__hand, {
+      // from: { y: 0 },
+      // to: { y: -1150 },
+      from: { opacity: 1 },
+      to: { opacity: 0 },
+      start: 0,
+      end: 10,
+    });
     animateFromTo(styles['hero__transform-target'], {
       from: { x: '0.054%', y: 0, scale: 1 },
       to: { x: '2%', y: 60, scale: 0.519937 },
       start: 0,
       end: 37,
     });
-  }, []);
+  }, );
 
   return (
     <div className={cn(styles.hero)}>
@@ -30,14 +38,14 @@ const Hero: NextPage = () => {
         <div ref={ref} className={styles['hero__container-inner']}>
           <div className={styles['hero__scroll-container']}>
             <div className={styles['hero__transform-target']}>
-              <p className={styles.hero__intro}>
-                Codini helps business create
+              <h5 className={styles.hero__intro}>
+                Codini helps businesses create
                 <br />
                 websites, mobile apps, and everything in between.
-              </p>
+              </h5>
               <div className={styles.hero__headline}>
                 <h1 className={styles['hero__headline-text']}>
-                 You think We create
+                 You think, We create
                 </h1>
                 <img
                   src="/images/hero-hands.png"
@@ -57,51 +65,6 @@ const Hero: NextPage = () => {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles['hero__cta-section']}>
-        <h4 className={styles['hero__cta-heading']}>
-          Want to get early access and product updates?
-        </h4>
-        <div className={cn(styles['hero__cta-wrapper'], 'w-form')}>
-          <form
-            id="email-form"
-            name="email-form"
-            data-name="Email Form"
-            className={styles['hero__cta-div']}
-          >
-            <div className={styles['hero__cta-inputwrapper']}>
-              <input
-                type="email"
-                className={cn(styles['hero__cta-input'], 'w-input')}
-                maxLength={256}
-                name="Hero-CTA-Email"
-                data-name="Hero CTA Email"
-                placeholder="Your email"
-                id="Hero-CTA-Email"
-                required
-              />
-              <input
-                type="submit"
-                value="Sign up"
-                data-wait="Please wait..."
-                className={cn(styles['hero__cta-button'], 'w-button')}
-              />
-            </div>
-            <div className={styles['hero__cta-disclaimer']}>
-              We care about protecting your data. Here’s our{' '}
-              <a href="#" className={styles['hero__cta-disclamer-link']}>
-                Privacy Policy
-              </a>
-              .
-            </div>
-          </form>
-          <div className="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div className="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
           </div>
         </div>
       </div>

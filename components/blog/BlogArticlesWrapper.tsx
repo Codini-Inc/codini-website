@@ -22,7 +22,7 @@ const BlogArticlesWrapper = ({ articles }: { articles: IArticle[] }) => {
       duration: 0.3,
       stagger: 0.3,
     });
-  }, []);
+  }, );
 
   return (
     <div ref={ref} className={styles['blog-articles__wrapper']}>
