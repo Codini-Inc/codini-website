@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { ClientType, ClientNeeds } from '../../_enums';
 
 interface ClientTypeSelectionProps {
-  clientType: ClientType;
+  clientType: ClientType | null;
   setClientType: (clientType: ClientType) => void;
 }
 

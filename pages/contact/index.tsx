@@ -70,16 +70,13 @@ export const Contact: React.FC = () => {
           <div className="w-full h-full " ref={clientTypeSelectionRef}>
             <ClientTypeSelection
               setClientType={setClientType}
-              clientType={clientType as ClientType}
+              clientType={clientType}
             />
           </div>
         )}
         {clientType !== null && clientNeed === null && (
           <div className="w-full h-full" ref={seekingRef}>
-            <Seeking
-              setClientNeed={setClientNeed}
-              clientNeed={clientNeed as ClientNeeds}
-            />
+            <Seeking setClientNeed={setClientNeed} clientNeed={clientNeed} />
           </div>
         )}
         {clientNeed !== null && (
