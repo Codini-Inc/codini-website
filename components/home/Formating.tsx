@@ -30,7 +30,15 @@ const Formating: NextPage = () => {
   return (
     <div ref={ref} className={cn(styles.formatting, 'wf-section')}>
       <div className={styles.formatting__wrapper}>
-        <div className={styles.formatting__lottie}></div>
+      {/* <div className={styles.formatting__lottie}></div> */}
+        <img
+        src="/images/otto.png"
+        alt=""
+        className={styles['about__culture-photo']}
+        width="528"
+        height="480"
+        />
+        {/* 213.186.33.5 */}
         <div className={styles.formatting__text}>
           <h4 className={styles.formatting__heading}>
             An average agency takes 80 days to create an ecommerce website
