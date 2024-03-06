@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import BlogArticles from '../../components/blog/BlogArticles';
 import BlogEssential from '../../components/blog/BlogEssential';
 import BlogHero from '../../components/blog/BlogHero';
 import BlogRecent from '../../components/blog/BlogRecent';
@@ -21,7 +20,6 @@ const Blog: NextPage = () => {
       <BlogRecent />
       <NewsletterCta />
       <BlogEssential />
-      <BlogArticles />
       <Footer />
     </>
   );
