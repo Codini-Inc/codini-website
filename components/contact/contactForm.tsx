@@ -1,9 +1,70 @@
 import cn from 'classnames';
-import { useEffect, useRef } from 'react';
-
+import { useState } from 'react';
+import axios from 'axios';
 import styles from '../blog/NewsletterCta.module.css';
+import { ClientNeeds } from '../../_enums';
+import { NextPage } from 'next';
 
-export const ContactForm: React.FC = () => {
+
+
+interface ContactForm {
+  type: ClientNeeds;
+  seeking: ClientNeeds;
+}
+
+
+export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
+  const [email, setEmail] = useState<string>();
+  const [phoneNumber, setPhoneNumber] = useState<string>();
+
+  const submitContact = async () => {
+    console.log(type)
+    console.log(seeking)
+    console.log(phoneNumber)
+    console.log(email)
+    // await PostContact(type, seeking, phoneNumber, email )
+    try {
+      const response = await axios.post('api/post-contacts', {
+        type, seeking, email, phoneNumber
+      });
+
+      if (response.status === 200) {
+        // router.push(`/blogs/${response.data.newPost.id}`);
+      console.error('success');
+
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handlePhoneNumberChange = async (value: string) => {
+    setPhoneNumber(value);
+    console.log(type)
+    console.log(seeking)
+    console.log(phoneNumber)
+    console.log(email)
+  // await PostContact(type, seeking, phoneNumber, email )
+  try {
+    const response = await axios.post('api/post-contact', {
+      "type" : type, "seeking":seeking, "email":email, "phone":phoneNumber
+    });
+
+    if (response.status === 200) {
+    console.error('success');
+    }
+  } catch (error) {
+    console.error(error);
+  }
+  };
+
+  const handleEmailChange = (value: string) => {
+
+    setEmail(value);
+    console.log(email);
+  };
+
+  
   return (
     <form
       // id="email-form"
@@ -23,6 +84,7 @@ export const ContactForm: React.FC = () => {
             className="px-4 py-2 border border-gray-300 text-lg rounded-md w-full outline-3 focus:border-blue-200 transition duration-300 ease-in-out"
             maxLength={256}
             name="Hero-CTA-Email-2"
+            onChange={(e) => handleEmailChange(e.target.value)}
             data-name="Hero CTA Email 2"
             placeholder="Your email"
             id="Hero-CTA-Email-2"
@@ -35,19 +97,21 @@ export const ContactForm: React.FC = () => {
             Phone
           </label>
           <input
-            type="email"
+            type="phone"
             // className={cn(styles['newsletter-cta__input'], 'w-input')}
             className="px-4 py-2 border border-gray-300 text-lg rounded-md w-full outline-3 focus:border-blue-200 transition duration-300 ease-in-out"
             maxLength={256}
             name="Hero-CTA-Email-2"
             data-name="Hero CTA Email 2"
-            placeholder="Your email"
+            onChange={(e) => handlePhoneNumberChange(e.target.value)}
+            placeholder="Your phone number"
             id="Hero-CTA-Email-2"
             required
           />
         </div>
 
-        <button className="px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out">
+
+        <button onClick={submitContact} className="px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out">
           Submit
         </button>
       </div>

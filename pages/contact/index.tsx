@@ -84,7 +84,7 @@ export const Contact: React.FC = () => {
         )}
         {clientNeed !== null && (
           <div className="w-full h-full" ref={contactFormRef}>
-            <ContactForm />
+            <ContactForm type={clientType as ClientType} seeking={clientNeed} />
           </div>
         )}
       </main>
