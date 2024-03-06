@@ -120,7 +120,7 @@ const Decks: NextPage = () => {
             // height="405"
           />
           <img
-            src="/images/slide05_720w.png"
+            src="/images/slide03_720w.png"
             alt=""
             className={styles.decks__img}
             // width="720"
@@ -153,13 +153,6 @@ const Decks: NextPage = () => {
             src="/images/slide09_720w.jpg"
             alt=""
             className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide10_720w.jpg"
-            alt=""
-            className={styles.decks__img}
             // width="720"
             // height="405"
           />
