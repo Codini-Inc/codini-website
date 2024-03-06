@@ -70,7 +70,7 @@ export const Contact: React.FC = () => {
           <div className="w-full h-full " ref={clientTypeSelectionRef}>
             <ClientTypeSelection
               setClientType={setClientType}
-              clientType={clientType as ClientType}
+              clientType={clientType }
             />
           </div>
         )}
@@ -78,15 +78,15 @@ export const Contact: React.FC = () => {
           <div className="w-full h-full" ref={seekingRef}>
             <Seeking
               setClientNeed={setClientNeed}
-              clientNeed={clientNeed as ClientNeeds}
+              clientNeed={clientNeed}
             />
           </div>
         )}
-        {clientNeed !== null && (
+        {/* {clientNeed !== null && (
           <div className="w-full h-full" ref={contactFormRef}>
-            <ContactForm />
+            <ContactForm type={clientType as ClientType} seeking={clientNeed} />
           </div>
-        )}
+        )} */}
       </main>
     </>
   );

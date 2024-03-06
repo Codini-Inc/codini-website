@@ -3,7 +3,7 @@ import { ClientType, ClientNeeds } from '../../_enums';
 
 interface SeekingProps {
   setClientNeed: (clientNeed: ClientNeeds) => void;
-  clientNeed: ClientNeeds;
+  clientNeed: ClientNeeds | null;
 }
 
 export const Seeking: NextPage<SeekingProps> = ({
