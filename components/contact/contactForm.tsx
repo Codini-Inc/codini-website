@@ -18,20 +18,13 @@ export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
   const [phoneNumber, setPhoneNumber] = useState<string>();
 
   const submitContact = async () => {
-    console.log(type)
-    console.log(seeking)
-    console.log(phoneNumber)
-    console.log(email)
-    // await PostContact(type, seeking, phoneNumber, email )
     try {
-      const response = await axios.post('api/post-contacts', {
-        type, seeking, email, phoneNumber
+      const response = await axios.post('api/post-contact', {
+        "type" : type, "seeking":seeking, "email":email, "phone":phoneNumber
       });
-
+  
       if (response.status === 200) {
-        // router.push(`/blogs/${response.data.newPost.id}`);
       console.error('success');
-
       }
     } catch (error) {
       console.error(error);
@@ -40,28 +33,10 @@ export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
 
   const handlePhoneNumberChange = async (value: string) => {
     setPhoneNumber(value);
-    console.log(type)
-    console.log(seeking)
-    console.log(phoneNumber)
-    console.log(email)
-  // await PostContact(type, seeking, phoneNumber, email )
-  try {
-    const response = await axios.post('api/post-contact', {
-      "type" : type, "seeking":seeking, "email":email, "phone":phoneNumber
-    });
-
-    if (response.status === 200) {
-    console.error('success');
-    }
-  } catch (error) {
-    console.error(error);
-  }
   };
 
   const handleEmailChange = (value: string) => {
-
     setEmail(value);
-    console.log(email);
   };
 
   
