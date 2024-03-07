@@ -18,11 +18,10 @@ const Footer: NextPage = () => {
             <a
             href="/"
               aria-current="page"
-
             >
               <div className={cn(styles['footer__logo-image1'], 'w-embed')}>
                 <img       
-                  src="/images/logo-dark-50.png"
+                  src="/images/logo-description-dark.png"
                   alt="Codini main dark logo"
                 />
               </div>
