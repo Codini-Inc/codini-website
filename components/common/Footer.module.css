@@ -36,8 +36,11 @@
     order: -1;
 }
 
-.footer__logo-image {
+.footer__logo-image1 {
     color: #2b2a35;
+    width: 5.5rem;
+    padding-bottom: 10px;
+    margin-left: -5px;
 }
 
 .footer__copyright {

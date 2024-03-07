@@ -76,14 +76,17 @@ export const Contact: React.FC = () => {
         )}
         {clientType !== null && clientNeed === null && (
           <div className="w-full h-full" ref={seekingRef}>
-            <Seeking setClientNeed={setClientNeed} clientNeed={clientNeed} />
+            <Seeking
+              setClientNeed={setClientNeed}
+              clientNeed={clientNeed}
+            />
           </div>
         )}
-        {clientNeed !== null && (
+        {/* {clientNeed !== null && (
           <div className="w-full h-full" ref={contactFormRef}>
-            <ContactForm />
+            <ContactForm type={clientType as ClientType} seeking={clientNeed} />
           </div>
-        )}
+        )} */}
       </main>
     </>
   );

@@ -41,10 +41,13 @@ const Nav: NextPage = () => {
           <a
             href="/"
             aria-current={router.pathname === '/' && 'page'}
-            className={cn(styles.nav__logo, 'w-nav-brand')}
+            className={cn(styles.nav__logo1, 'w-nav-brand')}
           >
-            <div className={cn(styles['nav__logo-image'], 'w-embed')}>
-              <Logo />
+            <div >
+              <img       
+                src="/images/logo-description.png"
+                alt="Codini main logo"
+              />
             </div>
           </a>
 
