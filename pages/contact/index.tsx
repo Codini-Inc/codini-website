@@ -59,12 +59,12 @@ export const Contact: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Codini | Get in Touch</title>
+        <title>Get in Touch | Codini</title>
         <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" name="description" />
         <meta property="og:type" content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" />
-        <meta content="Codini | Get in Touch" property="og:title" />
+        <meta content="Get in Touch | Codini" property="og:title" />
         <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" property="og:description" />
-        <meta content="Codini | Get in Touch" property="twitter:title" />
+        <meta content="Get in Touch | Codini" property="twitter:title" />
         <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" property="twitter:description" />
       </Head>
       <main className="w-full flex mt-20 h-screen space-y-20 items-center justify-center ">

@@ -34,10 +34,10 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Codini | About</title>
+        <title>About us | Codini</title>
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Clone Website" />
-        <meta property="og:title" content="Codini | About" />
+        <meta property="og:title" content="About us | Codini" />
       </Head>
       <AboutHero />
       <div ref={ref} className={cn(styles['div-animated'], 'div-animated')}>

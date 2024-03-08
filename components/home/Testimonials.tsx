@@ -26,7 +26,7 @@ const Testimonials: NextPage = () => {
                 Karim Bouattour
               </h4>
               <div className={styles['testimonials__card-role']}>
-                <a href="https://www.sotcot.tn/" target="_blank" className={styles['role_links']}>
+                <a href="https://www.sotcot.tn/" target="_blank" className={styles['role_links']} aria-label="Sotcot">
                 Head of SOTCOT, Tunisia
                 </a>
               </div>
@@ -51,7 +51,7 @@ const Testimonials: NextPage = () => {
                 Roy Arwas
               </h4>
               <div className={styles['testimonials__card-role']}>
-                <a href="https://www.creativexent.com/home" target="_blank" className={styles['role_links']}>
+                <a href="https://www.creativexent.com/home" target="_blank" className={styles['role_links']} aria-label="Creative X entertainement">
                   CEO at CXE, Miami
                 </a>
               </div>
@@ -76,7 +76,7 @@ const Testimonials: NextPage = () => {
                 Benedict Rees
               </h4>
               <div className={styles['testimonials__card-role']}>
-                <a className={styles['role_links']} href="https://compareprivateplanes.com" target="_blank">
+                <a className={styles['role_links']} href="https://compareprivateplanes.com" target="_blank" aria-label="Comoare Private Planes">
                   CEO at CPP, London
                 </a>
               </div>

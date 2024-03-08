@@ -30,7 +30,7 @@ const Footer: NextPage = () => {
             © Copyright 2024 Codini.
           </div>
           <div >
-            <a href="mailto: contact@codini.tn" className={styles.footer__link}>
+            <a href="mailto: contact@codini.tn" className={styles.footer__link} aria-label="Mail">
               contact@codini.tn
             </a>
           </div>
@@ -51,7 +51,7 @@ const Footer: NextPage = () => {
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Legal</h6>
-          <a href="#" className={styles.footer__link}>
+          <a href="#" className={styles.footer__link} aria-label="Legal notice">
             Legal Notice
           </a>
           <a href="#" className={styles.footer__link}>
@@ -65,6 +65,7 @@ const Footer: NextPage = () => {
               href="https://www.facebook.com/people/Codinitn/61556850401856/"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
+              aria-label="Facebook"
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
                 <Facebook />
@@ -74,6 +75,7 @@ const Footer: NextPage = () => {
               href="https://www.instagram.com/codini.tn/"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
+              aria-label="Instagram"
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
               <Instagram />
@@ -83,6 +85,7 @@ const Footer: NextPage = () => {
               href="#"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
+              aria-label="Linkedin"
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
                 <Linkedin />
@@ -92,6 +95,7 @@ const Footer: NextPage = () => {
               href="https://www.tiktok.com/@codini.tn"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
+              aria-label="TikTok"
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
                 <TikTok />
