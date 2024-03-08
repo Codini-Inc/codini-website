@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import cn from 'classnames';
-
+import Image from 'next/image';
 import styles from './Hero.module.css';
 import { useEffect, useRef } from 'react';
 import useAnimation from '../../hooks/useAnimation';
@@ -47,7 +47,7 @@ const Hero: NextPage = () => {
                 <h1 className={styles['hero__headline-text']}>
                  You think, We create
                 </h1>
-                <img
+                <Image
                   src="/images/hero-hands.png"
                   loading="eager"
                   alt=""
@@ -55,7 +55,7 @@ const Hero: NextPage = () => {
                   width="3840"
                   height="2160"
                 />
-                <img
+                <Image
                   src="/images/hero-ui_2808w.jpg"
                   loading="eager"
                   alt=""

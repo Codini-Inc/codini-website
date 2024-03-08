@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import cn from 'classnames';
-
+import Image from 'next/image';
 import styles from './Testimonials.module.css';
 
 const Testimonials: NextPage = () => {
@@ -14,13 +14,13 @@ const Testimonials: NextPage = () => {
             Working with Codini was a game-changer for our online presence. Their expertise resulted in a website that surpassed our expectations in the medical industry.
             </div>
             <div className={styles['testimonials__card-info']}>
-              <img
+              <Image
                 src="/images/first-testimonial.jpeg"
                 loading="lazy"
                 alt=""
                 className={styles['testimonials__card-photo']}
-                // width="120"
-                // height="120"
+                width="120"
+                height="120"
               />
               <h4 className={styles['testimonials__card-heading']}>
                 Karim Bouattour
@@ -39,13 +39,13 @@ const Testimonials: NextPage = () => {
             Codini exceeded our expectations with their expertise, and seamless communication, delivering a top-notch mobile app on App Store and Play Store.
             </div>
             <div className={styles['testimonials__card-info']}>
-              <img
+              <Image
                 src="/images/second-testimonial.jpeg"
                 loading="lazy"
                 alt=""
                 className={styles['testimonials__card-photo']}
-                // width="120"
-                // height="120"
+                width="120"
+                height="120"
               />
               <h4 className={styles['testimonials__card-heading']}>
                 Roy Arwas
@@ -64,13 +64,13 @@ const Testimonials: NextPage = () => {
             Thanks to Codini, our web app has been transformed into a reliable platform. Their expertise resolved our issues swiftly, ensuring smooth functionality and boosting performance.
             </div>
             <div className={styles['testimonials__card-info']}>
-              <img
+              <Image
                 src="/images/testimonial-3-avatar.jpeg"
                 loading="lazy"
                 alt=""
                 className={styles['testimonials__card-photo']}
-                // width="120"
-                // height="120"
+                width="120"
+                height="120"
               />
               <h4 className={styles['testimonials__card-heading']}>
                 Benedict Rees
