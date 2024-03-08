@@ -49,7 +49,7 @@ const Hero: NextPage = () => {
                 </h1>
                 <Image
                   src="/images/hero-hands.png"
-                  loading="eager"
+                  loading="lazy"
                   alt=""
                   className={styles.hero__hand}
                   width="3840"
@@ -57,7 +57,7 @@ const Hero: NextPage = () => {
                 />
                 <Image
                   src="/images/hero-ui_2808w.jpg"
-                  loading="eager"
+                  loading="lazy"
                   alt=""
                   className={styles.hero__ui}
                   width="2808"
