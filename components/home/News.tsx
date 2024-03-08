@@ -37,14 +37,14 @@ const News: NextPage = () => {
               An average website loads in 2.5 seconds
               </h4>
               <h3 className={styles["news__card-heading"]}>
-              We do it in 2.2 seconds.
+              We do it in 1.5 seconds.
               </h3>
             </a>
           </div>
           
           <h5 className={cn(styles["main-color-paragraph"])}>Wanna see it yourself?</h5>
           <a
-            href="https://pagespeed.web.dev/" target="_blank"
+            href="https://pagespeed.web.dev/analysis/https-www-codini-tn/jld5mwvl5e?form_factor=desktop" target="_blank"
             className={cn(styles["news__card-button"], "w-inline-block")}
           >
             <div className={styles["news__card-buttontext"]}>Speed test</div>
