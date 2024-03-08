@@ -15,47 +15,87 @@ export const Contact: React.FC = () => {
   const contactFormRef = useRef<HTMLDivElement>(null);
   const [clientType, setClientType] = useState<ClientType | null>(null);
   const [clientNeed, setClientNeed] = useState<ClientNeeds | null>(null);
-  const [animationStartStepOne, setAnimationStartStepOne] = useState(false);
+  const [stepOneVisible, setStepOneVisible] = useState<boolean>(true);
+  const [stepTwoVisible, setStepTwoVisible] = useState<boolean>(false);
+  const [stepThreeVisible, setStepThreeVisible] = useState<boolean>(false);
 
   const animateStep = (
     ref: RefObject<HTMLDivElement>,
     delay: number,
     isEnter: boolean,
   ) => {
-    gsap.fromTo(
+    const animation = gsap.timeline();
+    const tween = gsap.fromTo(
       ref.current,
       {
-        x: isEnter ? 3000 : 0,
-
+        x: isEnter ? 1000 : 0,
+        duration: 0.9,
         opacity: isEnter ? 0 : 1,
       },
       {
-        x: isEnter ? 0 : -3000,
+        x: isEnter ? 0 : -300,
         opacity: isEnter ? 1 : 0,
-        duration: 1.3,
+        duration: 0.9,
         delay: delay,
         ease: 'power4.out',
       },
     );
+    return tween;
   };
 
   useEffect(() => {
+    let tween: gsap.core.Tween;
     animateStep(clientTypeSelectionRef, 0, true);
-  }, []);
+    // tween.eventCallback('onComplete', () => {
+    //   setStepOneAnimationStarted(true);
+    // });
 
-  useEffect(() => {
-    if (clientType === null) return;
-    animateStep(clientTypeSelectionRef, 0, false);
-  }, [clientType]);
+    // if (clientType === null) return;
+    // tween = animateStep(clientTypeSelectionRef, 0, false);
 
-  useEffect(() => {
-    if (clientType !== null) {
-      animateStep(seekingRef, 0.1, true);
+    if (clientType !== null && stepOneVisible === true) {
+      tween = animateStep(clientTypeSelectionRef, 0, false);
+      tween.eventCallback('onComplete', () => {
+        console.log('setting step one to false');
+        setStepOneVisible(false);
+        setStepTwoVisible(true);
+      });
     }
-    if (clientNeed !== null) {
-      animateStep(seekingRef, 0, false);
+
+    if (clientNeed !== null && stepTwoVisible === true) {
+      tween = animateStep(seekingRef, 0, false);
+      tween.eventCallback('onComplete', () => {
+        console.log('setting step two to false');
+        setStepTwoVisible(false);
+        setStepThreeVisible(true);
+      });
+      tween = animateStep(contactFormRef, 0, true);
     }
   }, [clientType, clientNeed]);
+
+  useEffect(() => {
+    let tween: gsap.core.Tween;
+    if (stepTwoVisible) {
+      tween = animateStep(seekingRef, 0, true);
+      tween.eventCallback('onComplete', () => {
+        console.log('setting step two to true');
+        setStepTwoVisible(true);
+      });
+    }
+  }, [stepTwoVisible]);
+
+  useEffect(() => {
+    let tween: gsap.core.Tween;
+    if (stepThreeVisible) {
+      tween = animateStep(contactFormRef, 0, true);
+      tween.eventCallback('onComplete', () => {
+        console.log('setting step three to true');
+        // setStepThreeVisible(true);
+      });
+    }
+  }, [stepThreeVisible]);
+
+  console.log(stepOneVisible, stepTwoVisible, stepThreeVisible);
 
   return (
     <>
@@ -65,8 +105,8 @@ export const Contact: React.FC = () => {
         <meta property="og:description" content="Codini Website" />
         <meta property="og:title" content="Codini | Home" />
       </Head>
-      <main className="w-full flex mt-20 h-screen space-y-20 items-center justify-center ">
-        {clientType === null && (
+      <main className="w-full mt-20 h-screen space-y-20 items-center justify-center ">
+        {stepOneVisible && (
           <div className="w-full h-full " ref={clientTypeSelectionRef}>
             <ClientTypeSelection
               setClientType={setClientType}
@@ -74,19 +114,16 @@ export const Contact: React.FC = () => {
             />
           </div>
         )}
-        {clientType !== null && clientNeed === null && (
+        {stepTwoVisible && (
           <div className="w-full h-full" ref={seekingRef}>
-            <Seeking
-              setClientNeed={setClientNeed}
-              clientNeed={clientNeed}
-            />
+            <Seeking setClientNeed={setClientNeed} clientNeed={clientNeed} />
           </div>
         )}
-        {/* {clientNeed !== null && (
+        {stepThreeVisible && (
           <div className="w-full h-full" ref={contactFormRef}>
-            <ContactForm type={clientType as ClientType} seeking={clientNeed} />
+            <ContactForm type={clientType} seeking={clientNeed} />
           </div>
-        )} */}
+        )}
       </main>
     </>
   );

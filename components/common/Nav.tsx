@@ -1,11 +1,15 @@
+'use client';
 import { useEffect, useRef, useState } from 'react';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/dist/client/router';
 import { gsap } from 'gsap';
 import cn from 'classnames';
 import styles from './Nav.module.css';
-import Logo from '../../assets/icons/logo.svg';
+// import Logo from '../../assets/icons/logo.svg';
 import NavDropdown from './NavDropdown';
+import Image from 'next/image';
+
+import Logo from '../../assets/images/logo-description.png';
 
 const Nav: NextPage = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -37,16 +41,18 @@ const Nav: NextPage = () => {
         })}
       >
         <div className={cn(styles.nav__container, 'w-container')}>
-
           <a
             href="/"
             aria-current={router.pathname === '/' && 'page'}
             className={cn(styles.nav__logo1, 'w-nav-brand')}
           >
-            <div >
-              <img       
+            <div>
+              <Image
                 src="/images/logo-description.png"
                 alt="Codini main logo"
+                loading="eager"
+                width={200}
+                height={50}
               />
             </div>
           </a>
@@ -55,7 +61,6 @@ const Nav: NextPage = () => {
             role="navigation"
             className={cn(styles.nav__menu, 'w-nav-menu', styles.nav_header)}
           >
-
             <a
               href="/"
               aria-current={router.pathname === '/' && 'page'}
@@ -69,7 +74,6 @@ const Nav: NextPage = () => {
             >
               <div className={styles.nav__link}>Home</div>
             </a>
-
 
             <a
               href="/about"
@@ -137,7 +141,10 @@ const Nav: NextPage = () => {
               <a
                 href="/contact"
                 className={cn(
-                  styles['nav__link-div-jobstext'],
+                  styles['nav__link-div'],
+                  styles['nav__link-div--black'],
+                  styles['nav__link-div--space'],
+                  'w-inline-block',
                   'w-inline-block',
                 )}
               >

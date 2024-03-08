@@ -2,29 +2,29 @@ import cn from 'classnames';
 import { useState } from 'react';
 import axios from 'axios';
 import styles from '../blog/NewsletterCta.module.css';
-import { ClientNeeds } from '../../_enums';
+import { ClientNeeds, ClientType } from '../../_enums';
 import { NextPage } from 'next';
 
-
-
 interface ContactForm {
-  type: ClientNeeds;
+  type: ClientType | null;
   seeking: ClientNeeds;
 }
 
-
-export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
+export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
   const [email, setEmail] = useState<string>();
   const [phoneNumber, setPhoneNumber] = useState<string>();
 
   const submitContact = async () => {
     try {
       const response = await axios.post('api/post-contact', {
-        "type" : type, "seeking":seeking, "email":email, "phone":phoneNumber
+        type: type,
+        seeking: seeking,
+        email: email,
+        phone: phoneNumber,
       });
-  
+
       if (response.status === 200) {
-      console.error('success');
+        console.error('success');
       }
     } catch (error) {
       console.error(error);
@@ -39,7 +39,6 @@ export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
     setEmail(value);
   };
 
-  
   return (
     <form
       // id="email-form"
@@ -48,7 +47,7 @@ export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
       className="max-w-3xl w-full mx-auto h-full flex items-center justify-center flex-col gap-10 p-10 bg-white rounded-md shadow-lg"
     >
       <div className="space-y-10 w-full">
-        <h2 className='text-center'>Your info</h2>
+        <h2 className="text-center">Your info</h2>
         <div className="flex flex-col items-start gap-4">
           <label htmlFor="" className="text-lg font-semibold">
             Email
@@ -85,8 +84,23 @@ export const ContactForm: NextPage<ContactForm> = ({type, seeking}) => {
           />
         </div>
 
+        <div className="flex flex-col items-start gap-4">
+          <label htmlFor="" className="text-lg font-semibold">
+            Message
+          </label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            className="px-4 py-2 border border-gray-300 text-lg rounded-md w-full outline-3 focus:border-blue-200 transition duration-300 ease-in-out"
+          ></textarea>
+        </div>
 
-        <button onClick={submitContact} className="px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out">
+        <button
+          onClick={submitContact}
+          className="px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out"
+        >
           Submit
         </button>
       </div>

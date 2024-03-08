@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  images: {
-    loader: 'imgix',
-    path: '/codini-website',
-  },
+  // images: {
+  //   loader: 'imgix',
+  //   path: '',
+  // },
   eslint: {
     ignoreDuringBuilds: true,
   },
