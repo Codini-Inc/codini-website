@@ -1,13 +1,9 @@
 import Head from 'next/head';
 import styles from './Contact.module.css';
 import cn from 'classnames';
-import { ContactForm } from '../../components/contact/contactForm';
-import { Seeking } from '../../components/contact/Seeking';
-import { ClientTypeSelection } from '../../components/contact/ClientTypeSelection';
-import gsap from 'gsap';
-import { useEffect, useState, useRef } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-
+import Footer from '../../components/common/Footer';
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState<string>();
@@ -41,17 +37,21 @@ export const Contact: React.FC = () => {
 
   const handlePhoneNumberChange = async (value: string) => {
     setPhone(value);
+    setSuccess(null);
   };
 
   const handleEmailChange = (value: string) => {
+    setSuccess(null);
     setEmail(value);
   };
 
   const handleMessageChange = async (value: string) => {
+    setSuccess(null);
     setMessage(value);
   };
 
   const handleNameChange = (value: string) => {
+    setSuccess(null);
     setName(value);
   };
 
@@ -76,7 +76,6 @@ export const Contact: React.FC = () => {
                 <div className={styles["separator"]}></div>
               </div>
               <div className={cn(styles['form-block'], styles["form-block w-form"])}>
-
                   <label className={styles["field-label"]}>
                     Name
                   </label>
@@ -94,17 +93,17 @@ export const Contact: React.FC = () => {
                     </label>
                   <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="field" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
                   </textarea>
-                  <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} >
+                  <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
                     Submit
                   </button>
 
                 {success == true ?
                 (<div className={cn(styles["success-message"],styles["w-form-done"])}>
-                    <div>Thank you! Your submission has been received!</div>
+                    Thank you! Your submission has been received!
                   </div>) :
                   success == false ? 
                   (<div className={cn(styles["error-message"],styles["w-form-fail"])}>
-                    <div>Oops! Something went wrong while submitting the form.</div>
+                    Oops! Something went wrong while submitting the form.
                   </div>) 
                   :(<div></div>)
                 }
@@ -113,38 +112,9 @@ export const Contact: React.FC = () => {
             </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
 
 export default Contact;
-
-
-
-              {/* {clientType === null && (
-          <div className="w-full h-full " ref={clientTypeSelectionRef}>
-            <ClientTypeSelection
-              setClientType={setClientType}
-              clientType={clientType }
-            />
-          </div>
-        )}
-        {clientType !== null && clientNeed === null && (
-          <div className="w-full h-full" ref={seekingRef}>
-            <Seeking
-              setClientNeed={setClientNeed}
-              clientNeed={clientNeed}
-            />
-          </div>
-        )}
- */}
-
-
-
-
-              {/* {clientNeed !== null && (
-          <div className="w-full h-full" ref={contactFormRef}>
-            <ContactForm type={clientType as ClientType} seeking={clientNeed} />
-          </div>
-        )} */}
-       
