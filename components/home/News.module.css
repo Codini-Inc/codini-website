@@ -4,7 +4,7 @@
 
 .news {
     display: block;
-    padding-top: 178px;
+
     padding-right: 4vw;
     padding-left: 4vw;
     justify-content: center;
@@ -22,7 +22,8 @@
 
 .news__card {
     display: flex;
-    margin: 1.5em;
+    margin-right: 3em;
+    margin-bottom: 3em;
     padding: 4em;
     flex-direction: column;
     justify-content: space-between;
@@ -140,9 +141,6 @@
 }
 
 @media screen and (max-width: 991px) {
-    .news {
-        padding-top: 60px;
-    }
 
     .news__wrapper {
         max-width: 100%;

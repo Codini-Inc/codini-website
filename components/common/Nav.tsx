@@ -69,9 +69,7 @@ const Nav: NextPage = () => {
             >
               <div className={styles.nav__link}>Home</div>
             </a>
-
-
-            <a
+            {/* <a
               href="/about"
               aria-current={router.pathname === '/about' && 'page'}
               className={cn(
@@ -83,7 +81,7 @@ const Nav: NextPage = () => {
               )}
             >
               <div className={styles.nav__link}>About</div>
-            </a>
+            </a> */}
             <a
               href="#"
               className={cn(

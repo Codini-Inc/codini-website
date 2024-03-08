@@ -24,14 +24,14 @@ const Sharing: NextPage = () => {
     });
 
     animateFromTo(styles.sharing__plane, {
-      from: { x: -143, y: 100 },
+      from: { x: 0, y: 100 },
       to: { x: 126, y: -74 },
       start: 0,
       end: 100,
     });
     animateFromTo(styles['sharing__plane-shadow'], {
-      from: { x: -83 },
-      to: { x: 4 },
+      from: { x: 50 },
+      to: { x: 54 },
       start: 0,
       end: 59,
     });
@@ -59,28 +59,10 @@ const Sharing: NextPage = () => {
             // width="800"
             // height="601"
           />
-          <img
-            src="/images/shadow.png"
-            alt=""
-            className={styles['sharing__plane-shadow']}
-            // width="120"
-            // height="60"
-          />
+  
         </div>
-        <img
-          src="/images/hand_600w.png"
-          alt=""
-          className={styles.sharing__hand}
-          //   width="600"
-          //   height="748"
-        />
-        <img
-          src="/images/tablet_2400w.jpg"
-          alt=""
-          className={styles.sharing__image}
-          //   width="2400"
-          //   height="1202"
-        />
+     
+     
       </div>
     </div>
   );

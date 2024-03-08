@@ -1,9 +1,6 @@
 import type { NextPage } from 'next';
 import cn from 'classnames';
-
 import styles from './Footer.module.css';
-
-import Logo from '../../assets/icons/logo.svg';
 import Instagram from '../../assets/icons/instagram.svg';
 import Facebook from '../../assets/icons/facebook.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
@@ -66,16 +63,17 @@ const Footer: NextPage = () => {
           <h6 className={styles.footer__heading}>Follow us</h6>
           <div className={styles['footer__sm-wrapper']}>
             <a
-              href="#"
+              href="https://www.facebook.com/people/Codinitn/61556850401856/"
+              target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
-         
                 <Facebook />
               </div>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/codini.tn/"
+              target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
@@ -84,6 +82,7 @@ const Footer: NextPage = () => {
             </a>
             <a
               href="#"
+              target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
@@ -91,7 +90,8 @@ const Footer: NextPage = () => {
               </div>
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@codini.tn"
+              target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
