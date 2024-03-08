@@ -47,14 +47,6 @@ const Hero: NextPage = () => {
                 <h1 className={styles['hero__headline-text']}>
                  You think, We create
                 </h1>
-                <img
-                  src="/images/hero-hands.png"
-                  loading="eager"
-                  alt=""
-                  className={styles.hero__hand}
-                  width="3840"
-                  height="2160"
-                />
                 <Image
                   src="/images/hero-ui_2808w.jpg"
                   loading="eager"
