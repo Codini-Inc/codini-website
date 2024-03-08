@@ -1,72 +1,127 @@
 import Head from 'next/head';
-import styles from '../../components/blog/NewsletterCta.module.css';
+import styles from './Contact.module.css';
 import cn from 'classnames';
 import { ContactForm } from '../../components/contact/contactForm';
 import { Seeking } from '../../components/contact/Seeking';
 import { ClientTypeSelection } from '../../components/contact/ClientTypeSelection';
 import gsap from 'gsap';
 import { useEffect, useState, useRef } from 'react';
-import { RefObject } from 'react';
-import { ClientNeeds, ClientType } from '../../_enums';
+import axios from 'axios';
+
 
 export const Contact: React.FC = () => {
-  const clientTypeSelectionRef = useRef<HTMLDivElement>(null);
-  const seekingRef = useRef<HTMLDivElement>(null);
-  const contactFormRef = useRef<HTMLDivElement>(null);
-  const [clientType, setClientType] = useState<ClientType | null>(null);
-  const [clientNeed, setClientNeed] = useState<ClientNeeds | null>(null);
-  const [animationStartStepOne, setAnimationStartStepOne] = useState(false);
+  const [name, setName] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [phone, setPhone] = useState<string>();
+  const [message, setMessage] = useState<string>();
+  const [success, setSuccess] = useState<boolean| null>(null);
 
-  const animateStep = (
-    ref: RefObject<HTMLDivElement>,
-    delay: number,
-    isEnter: boolean,
-  ) => {
-    gsap.fromTo(
-      ref.current,
-      {
-        x: isEnter ? 3000 : 0,
-
-        opacity: isEnter ? 0 : 1,
-      },
-      {
-        x: isEnter ? 0 : -3000,
-        opacity: isEnter ? 1 : 0,
-        duration: 1.3,
-        delay: delay,
-        ease: 'power4.out',
-      },
-    );
+  const submitContact = async () => {
+    try {
+      const response = await axios.post('api/post-contact', {
+        "type" : name, "seeking":message, "email":email, "phone":phone
+      });
+  
+      if (response.status === 200) {
+      console.error('success');
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+      setSuccess(true);
+      }
+      else{
+        setSuccess(false);
+      }
+    } catch (error) {
+      console.error(error);
+      setSuccess(false);
+    }
   };
 
-  useEffect(() => {
-    animateStep(clientTypeSelectionRef, 0, true);
-  }, []);
+  const handlePhoneNumberChange = async (value: string) => {
+    setPhone(value);
+  };
 
-  useEffect(() => {
-    if (clientType === null) return;
-    animateStep(clientTypeSelectionRef, 0, false);
-  }, [clientType]);
+  const handleEmailChange = (value: string) => {
+    setEmail(value);
+  };
 
-  useEffect(() => {
-    if (clientType !== null) {
-      animateStep(seekingRef, 0.1, true);
-    }
-    if (clientNeed !== null) {
-      animateStep(seekingRef, 0, false);
-    }
-  }, [clientType, clientNeed]);
+  const handleMessageChange = async (value: string) => {
+    setMessage(value);
+  };
+
+  const handleNameChange = (value: string) => {
+    setName(value);
+  };
+
 
   return (
     <>
       <Head>
-        <title>Codini | Contact</title>
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="Codini Website" />
-        <meta property="og:title" content="Codini | Home" />
+        <title>Codini | Get in Touch</title>
+        <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" name="description" />
+        <meta property="og:type" content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" />
+        <meta content="Codini | Get in Touch" property="og:title" />
+        <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" property="og:description" />
+        <meta content="Codini | Get in Touch" property="twitter:title" />
+        <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" property="twitter:description" />
       </Head>
       <main className="w-full flex mt-20 h-screen space-y-20 items-center justify-center ">
-        {clientType === null && (
+        <div className={styles["page-content"]}>
+          <div className={cn(styles["section"],styles["grey"])}>
+            <div className={cn(styles["container"],styles["narrow"])}>
+              <div className={styles["section-header"]}>
+                <h1 className={styles["size-1"]}>We would love to connect with you.</h1>
+                <div className={styles["separator"]}></div>
+              </div>
+              <div className={cn(styles['form-block'], styles["form-block w-form"])}>
+
+                  <label className={styles["field-label"]}>
+                    Name
+                  </label>
+                  <input onChange={(e) => handleNameChange(e.target.value)} type="text" className={cn(styles["text-field"],styles["w-input"])} maxLength={256} name="name" data-name="Name" id="name" required/>
+                    <label  className={styles["field-label"]} >
+                        Email Address
+                    </label>
+                  <input onChange={(e) => handleEmailChange(e.target.value)} type="email" className={cn(styles["w-input"],styles["text-field"])} maxLength={256} name="email" data-name="Email" placeholder="" id="email" required />
+                    <label className={styles["field-label"]}>
+                      Phone
+                    </label>
+                  <input onChange={(e) => handlePhoneNumberChange(e.target.value)} type="tel" className={cn(styles["w-input"], styles["text-field"])}  maxLength={256} name="Phone" data-name="Phone" placeholder="" id="Phone" required />
+                    <label  className={styles["field-label"]}>
+                      Message
+                    </label>
+                  <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="field" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
+                  </textarea>
+                  <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} >
+                    Submit
+                  </button>
+
+                {success == true ?
+                (<div className={cn(styles["success-message"],styles["w-form-done"])}>
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>) :
+                  success == false ? 
+                  (<div className={cn(styles["error-message"],styles["w-form-fail"])}>
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>) 
+                  :(<div></div>)
+                }
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Contact;
+
+
+
+              {/* {clientType === null && (
           <div className="w-full h-full " ref={clientTypeSelectionRef}>
             <ClientTypeSelection
               setClientType={setClientType}
@@ -82,14 +137,14 @@ export const Contact: React.FC = () => {
             />
           </div>
         )}
-        {/* {clientNeed !== null && (
+ */}
+
+
+
+
+              {/* {clientNeed !== null && (
           <div className="w-full h-full" ref={contactFormRef}>
             <ContactForm type={clientType as ClientType} seeking={clientNeed} />
           </div>
         )} */}
-      </main>
-    </>
-  );
-};
-
-export default Contact;
+       

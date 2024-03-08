@@ -152,6 +152,7 @@
         padding-right: 4vw;
         padding-left: 4vw;
     }
+
     .newsletter-cta__image {
         display: none;
     }
@@ -162,24 +163,29 @@
         padding-right: 2em;
         opacity: 0;
     }
+
     .newsletter-cta__heading {
         font-size: 2.3em;
         line-height: 1.2em;
     }
+
     .newsletter-cta__paragraph {
         font-size: 1.2em;
         line-height: 1.5em;
     }
+
     .newsletter-cta__input-wrapper {
         display: block;
         width: 100%;
     }
+
     .newsletter-cta__input {
         width: 100%;
         margin-bottom: 8px;
         border-style: solid;
         border-radius: 4px;
     }
+
     .newsletter-cta__button {
         width: 100%;
         height: auto;
@@ -192,6 +198,7 @@
         align-self: stretch;
         flex: 1;
     }
+
     .newsletter-cta__input {
         width: 100%;
     }
