@@ -6,11 +6,11 @@ import cn from 'classnames';
 import styles from './Nav.module.css';
 import Logo from '../../assets/icons/logo.svg';
 import NavDropdown from './NavDropdown';
+import Image from 'next/image';
 
 const Nav: NextPage = () => {
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
-  const [dropDownOpen, setDropDownOpen] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
@@ -37,16 +37,17 @@ const Nav: NextPage = () => {
         })}
       >
         <div className={cn(styles.nav__container, 'w-container')}>
-
           <a
             href="/"
             aria-current={router.pathname === '/' && 'page'}
-            className={cn(styles.nav__logo1, 'w-nav-brand')}
+            className={cn(styles.nav__logo, 'w-nav-brand')}
           >
             <div >
-              <img       
+              <Image
                 src="/images/logo-description.png"
                 alt="Codini main logo"
+                width={100}
+                height={20}
               />
             </div>
           </a>
@@ -69,79 +70,19 @@ const Nav: NextPage = () => {
             >
               <div className={styles.nav__link}>Home</div>
             </a>
-            {/* <a
-              href="/about"
-              aria-current={router.pathname === '/about' && 'page'}
+            <a
+              href="/contact"
+              aria-current={router.pathname === '/contact' && 'page'}
               className={cn(
                 styles['nav__link-div'],
                 styles['nav__link-div--black'],
                 styles['nav__link-div--space'],
                 'w-inline-block',
-                { [styles['w--current']]: router.pathname === '/about' },
+                { [styles['w--current']]: router.pathname === '/contact' },
               )}
             >
-              <div className={styles.nav__link}>About</div>
-            </a> */}
-            <a
-              href="#"
-              className={cn(
-                styles['nav__link-div'],
-                styles['nav__link-div--black'],
-                styles['nav__link-div--space'],
-                styles['nav__link-div--hidedesktop'],
-                'w-inline-block',
-              )}
-            >
-              <div className={styles.nav__link}>Learning</div>
+              <div className={styles.nav__link}>Contact</div>
             </a>
-
-            <a
-              href="/blog"
-              className={cn(
-                styles['nav__link-div-onlymobile'],
-                'w-inline-block',
-              )}
-            >
-              <div className={styles.nav__link}>Blog</div>
-            </a>
-            <a
-              href="#"
-              className={cn(
-                styles['nav__link-div-onlymobile'],
-                'w-inline-block',
-              )}
-            >
-              <div className={styles.nav__link}>Help Center</div>
-            </a>
-            <a
-              href="#"
-              className={cn(
-                styles['nav__link-div-onlymobile'],
-                'w-inline-block',
-              )}
-            >
-              <div className={styles.nav__link}>What&#x27;s New</div>
-            </a>
-            <a
-              href="#"
-              className={cn(
-                styles['nav__link-div-onlymobile'],
-                'w-inline-block',
-              )}
-            >
-              <div className={styles.nav__link}>Constant Change</div>
-            </a>
-            <div className={styles['nav__link-div-jobs']}>
-              <a
-                href="/contact"
-                className={cn(
-                  styles['nav__link-div-jobstext'],
-                  'w-inline-block',
-                )}
-              >
-                <div className={styles.nav__link}>Contact</div>
-              </a>
-            </div>
           </nav>
           <div
             id="w-node-_32e10129-2707-fa69-8e71-2a2e29fe89df-29fe89b6"

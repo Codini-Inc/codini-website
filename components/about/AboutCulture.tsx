@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useEffect, useRef } from 'react';
-
+import Image from 'next/image';
 import styles from './AboutCulture.module.css';
 import useAnimation from '../../hooks/useAnimation';
 import teamLottie from '../../assets/lottie/team.json';
@@ -22,7 +22,7 @@ const AboutCulture: NextPage = () => {
       <div className={styles['about__culture-office']}></div>
       <div ref={ref} className={styles['about__culture-lottie']}></div>
       <div className={styles['about__culture-party']}></div>
-      <img
+      <Image
         src="/images/otto.jpg"
         alt=""
         className={styles['about__culture-photo']}

@@ -4,7 +4,7 @@
     top: 0px;
     right: 0px;
     z-index: 9999999999998;
-    padding: 16px 10vw;
+    padding: 10px 10vw;
     background-color: #fff;
     opacity: 1;
 }
@@ -51,15 +51,11 @@
 }
 
 .nav__logo {
-    width: 66px;
-    height: 23px;
+    width: 7rem;
     order: -1;
 }
 
-.nav__logo1 {
-    width: 15%;
-    order: -1;
-}
+
 
 .nav__menu {
     display: flex;

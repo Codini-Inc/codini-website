@@ -5,6 +5,7 @@ import Instagram from '../../assets/icons/instagram.svg';
 import Facebook from '../../assets/icons/facebook.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
 import TikTok from '../../assets/icons/tiktok.svg';
+import Image from 'next/image';
 
 const Footer: NextPage = () => {
   return (
@@ -17,9 +18,11 @@ const Footer: NextPage = () => {
               aria-current="page"
             >
               <div className={cn(styles['footer__logo-image1'], 'w-embed')}>
-                <img       
+                <Image       
                   src="/images/logo-description-dark.png"
                   alt="Codini main dark logo"
+                  width={200}
+                  height={50}
                 />
               </div>
             </a>
@@ -40,15 +43,9 @@ const Footer: NextPage = () => {
           >
             Home
           </a>
-
           <a
-            href="/about"
-            className={styles.footer__link}>About</a>
-
-
-          <a
-            href="/blog"
-            className={styles.footer__link}>Blog</a>
+            href="/contact"
+            className={styles.footer__link}>Contact</a>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Legal</h6>

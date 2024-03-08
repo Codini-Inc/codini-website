@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { useEffect, useRef } from 'react';
 import cn from 'classnames';
-
+import Image from 'next/image';
 import styles from './Sharing.module.css';
 import useAnimation from '../../hooks/useAnimation';
 
@@ -52,17 +52,14 @@ const Sharing: NextPage = () => {
           ref={sharingPlaneWrapperRef}
           className={styles['sharing__plane-wrapper']}
         >
-          <img
+          <Image
             src="/images/plane_800w.png"
             alt=""
             className={styles.sharing__plane}
-            // width="800"
-            // height="601"
+             width="800"
+             height="601"
           />
-  
         </div>
-     
-     
       </div>
     </div>
   );
