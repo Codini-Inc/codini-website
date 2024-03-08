@@ -29,7 +29,11 @@ const Footer: NextPage = () => {
           <div className={styles.footer__copyright}>
             © Copyright 2024 Codini.
           </div>
-          <div className={styles.footer__copyright}>All rights reserved.</div>
+          <div >
+            <a href="mailto: contact@codini.tn" className={styles.footer__link}>
+              contact@codini.tn
+            </a>
+          </div>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Company</h6>

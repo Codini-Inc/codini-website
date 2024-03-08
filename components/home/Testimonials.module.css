@@ -79,6 +79,11 @@
     font-weight: 400;
 }
 
+.role_links {
+    text-decoration: none;
+
+}
+
 @media screen and (min-width: 1280px) {
     .testimonials {
         padding-right: 10vw;
