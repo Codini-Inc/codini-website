@@ -26,8 +26,6 @@ const Footer: NextPage = () => {
                 />
               </div>
             </a>
-          
-
           <div className={styles.footer__copyright}>
             © Copyright 2024 Codini.
           </div>

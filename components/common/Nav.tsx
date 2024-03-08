@@ -42,7 +42,7 @@ const Nav: NextPage = () => {
             aria-current={router.pathname === '/' && 'page'}
             className={cn(styles.nav__logo, 'w-nav-brand')}
           >
-            <div >
+            <div>
               <Image
                 src="/images/logo-description.png"
                 alt="Codini main logo"
@@ -56,7 +56,6 @@ const Nav: NextPage = () => {
             role="navigation"
             className={cn(styles.nav__menu, 'w-nav-menu', styles.nav_header)}
           >
-
             <a
               href="/"
               aria-current={router.pathname === '/' && 'page'}
