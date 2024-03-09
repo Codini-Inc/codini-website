@@ -9,7 +9,7 @@
   background-size: 100% 2px;
 }
 
-@property --rotate {
+/* @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
   inherits: false;
@@ -89,4 +89,4 @@
   100% {
     --rotate: 360deg;
   }
-}
+} */
