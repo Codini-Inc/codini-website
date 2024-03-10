@@ -71,7 +71,6 @@ const Nav: NextPage = () => {
             </a>
             <a
               href="/contact"
-              aria-current={router.pathname === '/contact' && 'page'}
               className={cn(
                 styles['nav__link-div'],
                 styles['nav__link-div--black'],
