@@ -66,7 +66,7 @@ const NavDropdown = ({
           </a>
         
           <a
-            href="/contact"
+            href="/about"
             aria-current="page"
             className={cn(
               styles['nav__link-div'],

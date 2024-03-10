@@ -33,7 +33,7 @@ const Nav: NextPage = () => {
       <div
         role="banner"
         className={cn(styles.nav, 'w-nav', {
-          [styles['nav--purple']]: router.pathname === '/contact',
+          [styles['nav--purple']]: router.pathname === '/about',
         })}
       >
         <div className={cn(styles.nav__container, 'w-container')}>
