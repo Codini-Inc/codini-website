@@ -4,9 +4,9 @@ import { useRouter } from 'next/dist/client/router';
 import { gsap } from 'gsap';
 import cn from 'classnames';
 import styles from './Nav.module.css';
-import Logo from '../../assets/icons/logo.svg';
 import NavDropdown from './NavDropdown';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Nav: NextPage = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -37,7 +37,7 @@ const Nav: NextPage = () => {
         })}
       >
         <div className={cn(styles.nav__container, 'w-container')}>
-          <a
+          <Link
             href="/"
             aria-current={router.pathname === '/' && 'page'}
             className={cn(styles.nav__logo, 'w-nav-brand')}
@@ -50,13 +50,13 @@ const Nav: NextPage = () => {
                 height={20}
               />
             </div>
-          </a>
+          </Link>
 
           <nav
             role="navigation"
             className={cn(styles.nav__menu, 'w-nav-menu', styles.nav_header)}
           >
-            <a
+            <Link
               href="/"
               aria-current={router.pathname === '/' && 'page'}
               className={cn(
@@ -68,8 +68,8 @@ const Nav: NextPage = () => {
               )}
             >
               <div className={styles.nav__link}>Home</div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className={cn(
                 styles['nav__link-div'],
@@ -80,18 +80,18 @@ const Nav: NextPage = () => {
               )}
             >
               <div className={styles.nav__link}>Contact</div>
-            </a>
+            </Link>
           </nav>
           <div
             id="w-node-_32e10129-2707-fa69-8e71-2a2e29fe89df-29fe89b6"
             className={styles.nav__buttons}
           >
-            <a
+            <Link
               href="/contact"
               className={cn(styles.button, styles['button--blue'], 'w-button')}
             >
               Get in touch
-            </a>
+            </Link>
           </div>
           <button
             className={cn(styles.nav__mobilebutton, 'w-nav-button')}

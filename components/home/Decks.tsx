@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import cn from 'classnames';
-
+import Link from 'next/link';
 import styles from './Decks.module.css';
 import { useEffect, useRef } from 'react';
 import useAnimation from '../../hooks/useAnimation';
@@ -78,7 +78,7 @@ const Decks: NextPage = () => {
           We've created a mobile app in Miami, a CMS in Belgrade, a SAAS in Mumbai, a Webapp in Tunisia. <br></br>
         </p>
         <center>
-        <a
+        <Link
             href="#"
             className={cn(styles['news__card-button'], 'w-inline-block')}
           >
@@ -86,7 +86,7 @@ const Decks: NextPage = () => {
             <div className={cn(styles['news__card-buttonarrow'], 'w-embed')}>
               <CardButtonarrow />
             </div>
-          </a>
+          </Link>
           </center>
       </div>
       <div ref={decksWrapperRef} className={styles.decks__wrapper}>
