@@ -220,8 +220,8 @@
     }
 
     .hero__intro {
-        top: 28vh;
-        font-size: 0.23em;
+        top: 34vh;
+        font-size: 0.4em;
     }
 }
 
@@ -267,6 +267,22 @@
         line-height: 1.5em;
     }
 
+    .hero__headline {
+        max-width: 10ch;
+    }
+
+    .hero__headline-text {
+        padding-top: 1rem;
+        font-size: 11vw;
+        line-height: 0.95em;
+        text-align: center;
+
+    }
+
+    .hero__ui {
+        display: none;
+    }
+
     .hero__cta-inputwrapper {
         align-self: stretch;
         flex: 1;
@@ -277,7 +293,7 @@
     }
 
     .hero__container {
-        height: 120vh;
+        height: 84vh;
     }
 
     .hero__cta-section {
