@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { useState } from 'react';
 import axios from 'axios';
 import Footer from '../../components/common/Footer';
+import { BeatLoader } from 'react-spinners';
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState<string>();
@@ -11,8 +12,10 @@ export const Contact: React.FC = () => {
   const [phone, setPhone] = useState<string>();
   const [message, setMessage] = useState<string>();
   const [success, setSuccess] = useState<boolean| null>(null);
+  const [clicked, setClicked] = useState<boolean| false>(false);
 
   const submitContact = async () => {
+    setClicked(true);
     try {
       const response = await axios.post('api/post-contact', {
         "type" : name, "seeking":message, "email":email, "phone":phone
@@ -37,6 +40,7 @@ export const Contact: React.FC = () => {
       console.error(error);
       setSuccess(false);
     }
+    setClicked(false);
   };
 
   const handlePhoneNumberChange = async (value: string) => {
@@ -85,7 +89,7 @@ export const Contact: React.FC = () => {
                   </label>
                   <input onChange={(e) => handleNameChange(e.target.value)} type="text" className={cn(styles["text-field"],styles["w-input"])} maxLength={256} name="name" data-name="Name" id="name" required/>
                     <label  className={styles["field-label"]} >
-                        Email Address
+                    Email Address
                     </label>
                   <input onChange={(e) => handleEmailChange(e.target.value)} type="email" className={cn(styles["w-input"],styles["text-field"])} maxLength={256} name="email" data-name="Email" placeholder="" id="email" required />
                     <label className={styles["field-label"]}>
@@ -93,17 +97,20 @@ export const Contact: React.FC = () => {
                     </label>
                   <input onChange={(e) => handlePhoneNumberChange(e.target.value)} type="tel" className={cn(styles["w-input"], styles["text-field"])}  maxLength={256} name="Phone" data-name="Phone" placeholder="" id="phone" required />
                     <label  className={styles["field-label"]}>
-                      Message
+                      How can we help?
                     </label>
                   <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="message" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
                   </textarea>
-                  <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
+                  {clicked ? 
+                  <BeatLoader color='#334ac0' loading={true} />
+                    :   
+                  (<button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
                     Submit
-                  </button>
-
+                  </button>) 
+                }
                 {success == true ?
                 (<div className={cn(styles["success-message"],styles["w-form-done"])}>
-                    Thank you! Your submission has been received!
+                    Thank you! We promise to call you today.
                   </div>) :
                   success == false ? 
                   (<div className={cn(styles["error-message"],styles["w-form-fail"])}>
