@@ -89,7 +89,7 @@ export const Contact: React.FC = () => {
                   </label>
                   <input onChange={(e) => handleNameChange(e.target.value)} type="text" className={cn(styles["text-field"],styles["w-input"])} maxLength={256} name="name" data-name="Name" id="name" required/>
                     <label  className={styles["field-label"]} >
-                        Email Address
+                    Email Address
                     </label>
                   <input onChange={(e) => handleEmailChange(e.target.value)} type="email" className={cn(styles["w-input"],styles["text-field"])} maxLength={256} name="email" data-name="Email" placeholder="" id="email" required />
                     <label className={styles["field-label"]}>
@@ -97,7 +97,7 @@ export const Contact: React.FC = () => {
                     </label>
                   <input onChange={(e) => handlePhoneNumberChange(e.target.value)} type="tel" className={cn(styles["w-input"], styles["text-field"])}  maxLength={256} name="Phone" data-name="Phone" placeholder="" id="phone" required />
                     <label  className={styles["field-label"]}>
-                      Message
+                      How can we help?
                     </label>
                   <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="message" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
                   </textarea>
@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
                 }
                 {success == true ?
                 (<div className={cn(styles["success-message"],styles["w-form-done"])}>
-                    Thank you! Your submission has been received!
+                    Thank you! We promise to call you today.
                   </div>) :
                   success == false ? 
                   (<div className={cn(styles["error-message"],styles["w-form-fail"])}>
