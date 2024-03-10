@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import cn from 'classnames';
 import Image from 'next/image';
 import styles from './Testimonials.module.css';
+import Link from 'next/link';
 
 const Testimonials: NextPage = () => {
   return (
@@ -26,9 +27,9 @@ const Testimonials: NextPage = () => {
                 Karim Bouattour
               </h4>
               <div className={styles['testimonials__card-role']}>
-                <a href="https://www.sotcot.tn/" target="_blank" className={styles['role_links']} aria-label="Sotcot">
+                <Link href="https://www.sotcot.tn/" target="_blank" className={styles['role_links']} aria-label="Sotcot">
                 Head of SOTCOT, Tunisia
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -51,9 +52,9 @@ const Testimonials: NextPage = () => {
                 Roy Arwas
               </h4>
               <div className={styles['testimonials__card-role']}>
-                <a href="https://www.creativexent.com/home" target="_blank" className={styles['role_links']} aria-label="Creative X entertainement">
+                <Link href="https://www.creativexent.com/home" target="_blank" className={styles['role_links']} aria-label="Creative X entertainement">
                   CEO at CXE, Miami
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -76,9 +77,9 @@ const Testimonials: NextPage = () => {
                 Benedict Rees
               </h4>
               <div className={styles['testimonials__card-role']}>
-                <a className={styles['role_links']} href="https://compareprivateplanes.com" target="_blank" aria-label="Comoare Private Planes">
+                <Link className={styles['role_links']} href="https://compareprivateplanes.com" target="_blank" aria-label="Comoare Private Planes">
                   CEO at CPP, London
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -20,6 +20,10 @@ export const Contact: React.FC = () => {
   
       if (response.status === 200) {
       console.error('success');
+      (document.getElementById('name') as HTMLInputElement).value = '';
+      (document.getElementById('phone') as HTMLInputElement).value = '';
+      (document.getElementById('email') as HTMLInputElement).value = '';
+      (document.getElementById('message') as HTMLInputElement).value = '';
       setName('');
       setEmail('');
       setPhone('');
@@ -87,11 +91,11 @@ export const Contact: React.FC = () => {
                     <label className={styles["field-label"]}>
                       Phone
                     </label>
-                  <input onChange={(e) => handlePhoneNumberChange(e.target.value)} type="tel" className={cn(styles["w-input"], styles["text-field"])}  maxLength={256} name="Phone" data-name="Phone" placeholder="" id="Phone" required />
+                  <input onChange={(e) => handlePhoneNumberChange(e.target.value)} type="tel" className={cn(styles["w-input"], styles["text-field"])}  maxLength={256} name="Phone" data-name="Phone" placeholder="" id="phone" required />
                     <label  className={styles["field-label"]}>
                       Message
                     </label>
-                  <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="field" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
+                  <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="message" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
                   </textarea>
                   <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
                     Submit

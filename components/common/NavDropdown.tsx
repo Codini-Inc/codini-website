@@ -52,7 +52,7 @@ const NavDropdown = ({
     >
       <nav role="navigation" className={cn(styles.nav__menu, 'w-nav-menu')}>
         
-          <a
+          <Link
             href="/"
             className={cn(
               styles['nav__link-div'],
@@ -63,10 +63,10 @@ const NavDropdown = ({
             )}
           >
             <div className={styles.nav__link}>Home</div>
-          </a>
+          </Link>
         
-          <a
-            href="/about"
+          <Link
+            href="/contact"
             aria-current="page"
             className={cn(
               styles['nav__link-div'],
@@ -78,7 +78,7 @@ const NavDropdown = ({
             )}
           >
             <div className={styles.nav__link}>Contact</div>
-          </a>
+          </Link>
       </nav>
     </div>
   );

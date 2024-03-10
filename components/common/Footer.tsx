@@ -6,6 +6,7 @@ import Facebook from '../../assets/icons/facebook.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
 import TikTok from '../../assets/icons/tiktok.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Footer: NextPage = () => {
       <div className={styles.footer__wrapper}>
         <div className={styles.footer__credits}>
           
-            <a
+            <Link
             href="/"
               aria-current="page"
             >
@@ -25,43 +26,43 @@ const Footer: NextPage = () => {
                   height={50}
                 />
               </div>
-            </a>
+            </Link>
           <div className={styles.footer__copyright}>
             © Copyright 2024 Codini.
           </div>
           <div >
-            <a href="mailto: contact@codini.tn" className={styles.footer__link} aria-label="Mail">
+            <Link href="mailto: contact@codini.tn" className={styles.footer__link} aria-label="Mail">
               contact@codini.tn
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Company</h6>
 
-          <a
+          <Link
             href="/"
             aria-current="page"
             className={cn(styles.footer__link, 'w--current')}
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
-            className={styles.footer__link}>Contact</a>
+            className={styles.footer__link}>Contact</Link>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Legal</h6>
-          <a href="#" className={styles.footer__link} aria-label="Legal notice">
+          <Link href="#" className={styles.footer__link} aria-label="Legal notice">
             Legal Notice
-          </a>
-          <a href="#" className={styles.footer__link}>
+          </Link>
+          <Link href="#" className={styles.footer__link}>
             Privacy Policy
-          </a>
+          </Link>
         </div>
         <div className={styles.footer__sm}>
           <h6 className={styles.footer__heading}>Follow us</h6>
           <div className={styles['footer__sm-wrapper']}>
-            <a
+            <Link
               href="https://www.facebook.com/people/Codinitn/61556850401856/"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
@@ -70,8 +71,8 @@ const Footer: NextPage = () => {
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
                 <Facebook />
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/codini.tn/"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
@@ -80,8 +81,8 @@ const Footer: NextPage = () => {
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
               <Instagram />
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
@@ -90,8 +91,8 @@ const Footer: NextPage = () => {
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
                 <Linkedin />
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.tiktok.com/@codini.tn"
               target='_blank'
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
@@ -100,7 +101,7 @@ const Footer: NextPage = () => {
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
                 <TikTok />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
