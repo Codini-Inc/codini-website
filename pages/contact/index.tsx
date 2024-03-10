@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { useState } from 'react';
 import axios from 'axios';
 import Footer from '../../components/common/Footer';
+import {Spinner} from "@nextui-org/react";
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState<string>();
@@ -100,7 +101,7 @@ export const Contact: React.FC = () => {
                   <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
                     Submit
                   </button>
-
+                  <Spinner size="md" color="warning" />asdsad123
                 {success == true ?
                 (<div className={cn(styles["success-message"],styles["w-form-done"])}>
                     Thank you! Your submission has been received!
