@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { useState } from 'react';
 import axios from 'axios';
 import Footer from '../../components/common/Footer';
-import {Spinner} from "@nextui-org/react";
+import { BeatLoader } from 'react-spinners';
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState<string>();
@@ -12,8 +12,10 @@ export const Contact: React.FC = () => {
   const [phone, setPhone] = useState<string>();
   const [message, setMessage] = useState<string>();
   const [success, setSuccess] = useState<boolean| null>(null);
+  const [clicked, setClicked] = useState<boolean| false>(false);
 
   const submitContact = async () => {
+    setClicked(true);
     try {
       const response = await axios.post('api/post-contact', {
         "type" : name, "seeking":message, "email":email, "phone":phone
@@ -38,6 +40,7 @@ export const Contact: React.FC = () => {
       console.error(error);
       setSuccess(false);
     }
+    setClicked(false);
   };
 
   const handlePhoneNumberChange = async (value: string) => {
@@ -98,10 +101,13 @@ export const Contact: React.FC = () => {
                     </label>
                   <textarea onChange={(e) => handleMessageChange(e.target.value)} name="field" maxLength={5000} id="message" className={cn(styles["w-input"],styles["text-field"],styles["area"])}>
                   </textarea>
-                  <button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
+                  {clicked ? 
+                  <BeatLoader color='#334ac0' loading={true} />
+                    :   
+                  (<button onClick={submitContact} className={cn(styles.button, styles['button--blue'])} name='submit'>
                     Submit
-                  </button>
-                  <Spinner size="md" color="warning" />asdsad123
+                  </button>) 
+                }
                 {success == true ?
                 (<div className={cn(styles["success-message"],styles["w-form-done"])}>
                     Thank you! Your submission has been received!
