@@ -47,7 +47,7 @@ const Hero: NextPage = () => {
                 <h1 className={styles['hero__headline-text']}>
                  You think, We create
                 </h1>
-                <Image
+                <img
                   src="/images/hero-hands.png"
                   loading="eager"
                   alt=""
@@ -57,7 +57,7 @@ const Hero: NextPage = () => {
                 />
                 <Image
                   src="/images/hero-ui_2808w.jpg"
-                  loading="lazy"
+                  loading="eager"
                   alt=""
                   className={styles.hero__ui}
                   width="2808"
