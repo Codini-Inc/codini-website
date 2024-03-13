@@ -105,7 +105,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
         // id="email-form"
         // name="email-form"
         // data-name="Email Form"
-        className="max-w-3xl w-full mx-auto h-full flex items-center justify-center flex-col gap-10 p-10 bg-white rounded-md shadow-lg step"
+        className="max-w-3xl w-full mx-auto h-full flex items-center justify-center flex-col gap-10 p-10 bg-white rounded-md step"
       >
         <div className="space-y-10 w-full transition-all">
           <h2 className="text-center transition-all">
@@ -183,7 +183,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
           <button
             onClick={submitContact}
             className={cn(
-              'px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out',
+              'px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out hover:bg-[#1e2a78] hover:scale-105 ',
             )}
           >
             Submit

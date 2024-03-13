@@ -15,6 +15,7 @@ export const Contact: React.FC = () => {
   const [clientType, setClientType] = useState<ClientType | null>(null);
   const [clientNeed, setClientNeed] = useState<ClientNeeds | null>(null);
   const [currentStep, setCurrentStep] = useState(0);
+  const [isForward, setIsForward] = useState(true);
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
@@ -54,6 +55,14 @@ export const Contact: React.FC = () => {
     );
   };
 
+  const handleNavigateStep = (step: number) => {
+    if (step !== currentStep) {
+      setIsForward(step > currentStep);
+      animateExit();
+      setTimeout(() => setCurrentStep(step), 300);
+    }
+  };
+
   useEffect(() => {
     gsap.fromTo(
       '.step',
@@ -88,6 +97,57 @@ export const Contact: React.FC = () => {
         <meta property="og:title" content="Codini | Home" />
       </Head>
       <main className="w-full mt-20 h-screen ">
+        {/* steps marker */}
+        <div className="py-3">
+          <div className="flex items-center justify-center gap-8 z-50">
+            <div className="relative group">
+              <button
+                className={`w-3 h-3 rounded-full hover:scale-150 ${
+                  currentStep === 0 ? 'bg-[#1e2a78]' : 'bg-gray-300'
+                }`}
+                onClick={() => handleNavigateStep(0)}
+              ></button>
+              {/* on hover show step number */}
+              <div
+                className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
+              >
+                <div className="text-xs font-bold  text-white bg-gray-500 px-4 py-2 rounded-md">
+                  Enterprise
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <button
+                className={`w-3 h-3 rounded-full hover:scale-150 ${
+                  currentStep === 1 ? 'bg-[#1e2a78]' : 'bg-gray-300'
+                }`}
+                onClick={() => handleNavigateStep(1)}
+              ></button>
+              <div
+                className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0  scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
+              >
+                <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md">
+                  Enterprise
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <button
+                className={`w-3 h-3 rounded-full hover:scale-150 ${
+                  currentStep === 2 ? 'bg-[#1e2a78]' : 'bg-gray-300'
+                }`}
+                onClick={() => handleNavigateStep(2)}
+              ></button>
+              <div
+                className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
+              >
+                <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md">
+                  Enterprise
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {currentStep === 0 && (
           <div className="w-full h-full " ref={clientTypeSelectionRef}>
             <ClientTypeSelection
