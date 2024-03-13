@@ -102,7 +102,7 @@ export const Contact: React.FC = () => {
           <div className="flex items-center justify-center gap-8 z-50">
             <div className="relative group">
               <button
-                className={`w-3 h-3 rounded-full hover:scale-150 ${
+                className={`w-3 h-3 rounded-full hover:scale-150 transition-all duration-300 ${
                   currentStep === 0 ? 'bg-[#1e2a78]' : 'bg-gray-300'
                 }`}
                 onClick={() => handleNavigateStep(0)}
@@ -118,7 +118,7 @@ export const Contact: React.FC = () => {
             </div>
             <div className="relative group">
               <button
-                className={`w-3 h-3 rounded-full hover:scale-150 ${
+                className={`w-3 h-3 rounded-full hover:scale-150 transition-all duration-300 ${
                   currentStep === 1 ? 'bg-[#1e2a78]' : 'bg-gray-300'
                 }`}
                 onClick={() => handleNavigateStep(1)}
@@ -133,7 +133,7 @@ export const Contact: React.FC = () => {
             </div>
             <div className="relative group">
               <button
-                className={`w-3 h-3 rounded-full hover:scale-150 ${
+                className={`w-3 h-3 rounded-full hover:scale-150 transition-all duration-300 ${
                   currentStep === 2 ? 'bg-[#1e2a78]' : 'bg-gray-300'
                 }`}
                 onClick={() => handleNavigateStep(2)}
