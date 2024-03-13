@@ -107,12 +107,11 @@ export const Contact: React.FC = () => {
                 }`}
                 onClick={() => handleNavigateStep(0)}
               ></button>
-              {/* on hover show step number */}
               <div
                 className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
               >
-                <div className="text-xs font-bold  text-white bg-gray-500 px-4 py-2 rounded-md">
-                  Enterprise
+                <div className="text-xs font-bold  text-white bg-gray-500 px-4 py-2 rounded-md whitespace-nowrap">
+                  User Type
                 </div>
               </div>
             </div>
@@ -127,7 +126,7 @@ export const Contact: React.FC = () => {
                 className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0  scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
               >
                 <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md">
-                  Enterprise
+                  Seeking
                 </div>
               </div>
             </div>
@@ -141,8 +140,8 @@ export const Contact: React.FC = () => {
               <div
                 className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
               >
-                <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md">
-                  Enterprise
+                <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md whitespace-nowrap">
+                  Contact form
                 </div>
               </div>
             </div>
