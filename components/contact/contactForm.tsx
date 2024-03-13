@@ -6,6 +6,7 @@ import { ClientNeeds, ClientType } from '../../_enums';
 import { NextPage } from 'next';
 import contactFormStyles from './contactForm.module.css';
 import gsap from 'gsap';
+// import ConfettiExplosion from 'react-confetti-explosion';
 
 interface ContactForm {
   type: ClientType | null;
@@ -19,6 +20,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
   const emailInputContainerRef = createRef<HTMLDivElement>();
   const phoneInputContainerRef = createRef<HTMLDivElement>();
   const messageTextareaContainerRef = createRef<HTMLDivElement>();
+  // const [isExploding, setIsExploding] = useState(false);
   const overlayRef = createRef<HTMLDivElement>();
 
   const submitContact = async () => {
@@ -32,6 +34,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
 
       if (response.status === 200) {
         console.error('success');
+        // setIsExploding(true);
       }
     } catch (error) {
       console.error(error);
@@ -107,10 +110,10 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
         // data-name="Email Form"
         className="max-w-3xl w-full mx-auto h-full flex items-center justify-center flex-col gap-10 p-10 bg-white rounded-md step"
       >
-        <div className="space-y-7 w-full transition-all">
-          <h2 className="text-center transition-all">
+        <div className="space-y-10 w-full transition-all px-4">
+          <p className="text-center text-5xl font-semibold transition-all">
             We would love to connect with you.
-          </h2>
+          </p>
           <div
             className="flex flex-col items-start gap-4 bg-white w-full"
             ref={emailInputContainerRef}
@@ -197,6 +200,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
           .
         </div>
       </form>
+      {/* {isExploding && <ConfettiExplosion />} */}
     </>
   );
 };
