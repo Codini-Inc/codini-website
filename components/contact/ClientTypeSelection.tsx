@@ -19,12 +19,12 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
   };
 
   return (
-    <div className=" w-full step h-full">
-      <div className='space-y-10 w-full mt-40'>
+    <div className="w-full step h-full">
+      <div className="space-y-10 w-full mt-20">
         <p className="text-center font-bold text-3xl">Are you </p>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-14">
           <div
-            className={`max-w-xs w-full flex flex-col justify-center ${clientType === ClientType.ENTERPRISE ? 'border  border-blue-200' : ''}`}
+            className={`max-w-xs w-full flex flex-col justify-center space-y-10`}
             role="button"
             onClick={() => handleSelection(ClientType.ENTERPRISE)}
           >
@@ -36,7 +36,7 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
             <span className="text-center text-2xl font-bold">Enterprise</span>
           </div>
           <div
-            className={`max-w-xs w-full flex flex-col justify-center ${clientType === ClientType.INDIVIDUAL ? 'border  border-blue-200' : ''}`}
+            className={`max-w-xs w-full flex flex-col justify-center space-y-10`}
             role="button"
             onClick={() => handleSelection(ClientType.INDIVIDUAL)}
           >

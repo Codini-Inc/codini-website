@@ -18,7 +18,7 @@ export const Seeking: NextPage<SeekingProps> = ({
   };
 
   return (
-    <div className="space-y-10 w-full  mx-auto step">
+    <div className="space-y-10 w-full  mx-auto step mt-20">
       <p className="text-center font-bold text-3xl">Seeking</p>
       <div className="flex flex-col md:flex-row w-full gap-5 items-center justify-center">
         <div

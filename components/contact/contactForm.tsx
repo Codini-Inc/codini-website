@@ -107,7 +107,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
         // data-name="Email Form"
         className="max-w-3xl w-full mx-auto h-full flex items-center justify-center flex-col gap-10 p-10 bg-white rounded-md step"
       >
-        <div className="space-y-10 w-full transition-all">
+        <div className="space-y-7 w-full transition-all">
           <h2 className="text-center transition-all">
             We would love to connect with you.
           </h2>

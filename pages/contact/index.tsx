@@ -20,7 +20,8 @@ export const Contact: React.FC = () => {
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
       animateExit();
-      setTimeout(() => setCurrentStep(currentStep + 1), 300);
+      // setTimeout(() => setCurrentStep(currentStep + 1), 300);
+      setCurrentStep(currentStep + 1)
     }
   };
   const animateExit = () => {
@@ -96,7 +97,7 @@ export const Contact: React.FC = () => {
         <meta property="og:description" content="Codini Website" />
         <meta property="og:title" content="Codini | Home" />
       </Head>
-      <main className="w-full mt-20 h-screen ">
+      <main className="w-dwh mt-20 h-screen ">
         {/* steps marker */}
         <div className="py-3">
           <div className="flex items-center justify-center gap-8 z-50">
