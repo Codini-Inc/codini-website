@@ -39,14 +39,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           crossOrigin=""
           type="font/woff2"
         />
-
-        <meta httpEquiv="pragma" content="no-cache" />
-        <meta
-          httpEquiv="cache-control"
-          content="no-cache, no-store, must-revalidate"
-        />
-
-        <meta name="robots" content="noindex"></meta>
       </Head>
       <Nav />
       <Component {...pageProps} />

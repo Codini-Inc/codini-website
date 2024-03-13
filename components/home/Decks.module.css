@@ -122,15 +122,11 @@
     .decks__text {
         width: 80%;
     }
-
-    .decks__wrapper {
-        transform: translate(0px, -24px);
-    }
 }
 
 @media screen and (max-width: 767px) {
     .decks {
-        height: 60vh;
+        height: 70vh;
     }
 
     .decks__text {

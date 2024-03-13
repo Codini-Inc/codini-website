@@ -52,7 +52,7 @@ const NavDropdown = ({
     >
       <nav role="navigation" className={cn(styles.nav__menu, 'w-nav-menu')}>
         
-          <a
+          <Link
             href="/"
             className={cn(
               styles['nav__link-div'],
@@ -63,10 +63,10 @@ const NavDropdown = ({
             )}
           >
             <div className={styles.nav__link}>Home</div>
-          </a>
+          </Link>
         
-          <a
-            href="/about"
+          <Link
+            href="/contact"
             aria-current="page"
             className={cn(
               styles['nav__link-div'],
@@ -74,93 +74,11 @@ const NavDropdown = ({
               styles.space,
               'w-inline-block',
               'w--current',
-              { [styles['w--current']]: router.pathname === '/about' },
+              { [styles['w--current']]: router.pathname === '/contact' },
             )}
           >
-            <div className={styles.nav__link}>About</div>
-          </a>
-        
-        <a
-          href="#"
-          className={cn(
-            styles['nav__link-div'],
-            styles['nav__link-div--white'],
-            styles.space,
-            'w-inline-block',
-          )}
-        >
-          <div className={styles.nav__link}>Learning</div>
-        </a>
-        
-          <a
-          href="/blog"
-            className={cn(
-              styles['nav__link-div-onlymobile'],
-              'w-inline-block',
-              {
-                [styles['w--current']]: router.pathname === '/blog',
-              },
-            )}
-          >
-            <div className={styles.nav__link}>Blog</div>
-          </a>
-        <a
-          href="#"
-          className={cn(styles['nav__link-div-onlymobile'], 'w-inline-block')}
-        >
-          <div className={styles.nav__link}>Help Center</div>
-        </a>
-        <a
-          href="#"
-          className={cn(styles['nav__link-div-onlymobile'], 'w-inline-block')}
-        >
-          <div className={styles.nav__link}>What&apos;s New</div>
-        </a>
-        <a
-          href="#"
-          className={cn(styles['nav__link-div-onlymobile'], 'w-inline-block')}
-        >
-          <div className={styles.nav__link}>Constant Change</div>
-        </a>
-        <div className={styles['nav__link-div-jobs']}>
-          <a
-            href="#hiring"
-            className={cn(
-              styles['nav__link-div-jobstext'],
-              styles['nav__link-div-jobs--white'],
-              'w-inline-block',
-            )}
-          >
-            <div className={styles.nav__link}>Jobs</div>
-          </a>
-          <div
-            className={cn(
-              styles['nav__link-div-jobs-counter'],
-              styles['nav__link-div-jobs-counter--white'],
-            )}
-          >
-            <p
-              className={cn(
-                styles['nav__link-jobs-counter'],
-                styles['nav__link-jobs-counter--black'],
-              )}
-            >
-              8
-            </p>
-          </div>
-        </div>
-        <a
-          href="#"
-          className={cn(
-            styles['nav__link-div-jobs-mobileonly'],
-            'w-inline-block',
-          )}
-        >
-          <div className={styles.nav__link}>Jobs</div>
-          <div className={styles['nav__link-div-jobs-counter']}>
-            <p className={styles['nav__link-jobs-counter']}>8</p>
-          </div>
-        </a>
+            <div className={styles.nav__link}>Contact</div>
+          </Link>
       </nav>
     </div>
   );

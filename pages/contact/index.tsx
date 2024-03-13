@@ -92,10 +92,13 @@ export const Contact: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Codini | Contact</title>
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="Codini Website" />
-        <meta property="og:title" content="Codini | Home" />
+        <title>Get in Touch | Codini</title>
+        <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" name="description" />
+        <meta property="og:type" content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" />
+        <meta content="Get in Touch | Codini" property="og:title" />
+        <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" property="og:description" />
+        <meta content="Get in Touch | Codini" property="twitter:title" />
+        <meta content="We would love to connect with you! For any question, please send us an email at contact@codini.tn" property="twitter:description" />
       </Head>
       <main className="w-dwh mt-20 h-screen ">
         {/* steps marker */}
@@ -172,6 +175,7 @@ export const Contact: React.FC = () => {
           </div>
         )}
       </main>
+      <Footer />
     </>
   );
 };

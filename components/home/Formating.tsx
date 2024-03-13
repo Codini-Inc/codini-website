@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { useEffect, useRef } from 'react';
 import cn from 'classnames';
-
+import Image from 'next/image';
 import styles from './Formating.module.css';
 import useAnimation from '../../hooks/useAnimation';
 import snapLottie from '../../assets/lottie/snap.json';
@@ -31,8 +31,8 @@ const Formating: NextPage = () => {
     <div ref={ref} className={cn(styles.formatting, 'wf-section')}>
       <div className={styles.formatting__wrapper}>
       {/* <div className={styles.formatting__lottie}></div> */}
-        <img
-        src="/images/otto.png"
+        <Image
+        src="/images/dart.gif"
         alt=""
         className={styles['about__culture-photo']}
         width="528"

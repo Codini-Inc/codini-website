@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import cn from 'classnames';
-
+import Link from 'next/link';
 import styles from './Cta.module.css';
 
 const Cta: NextPage = () => {
@@ -13,19 +13,19 @@ const Cta: NextPage = () => {
         <div className={cn(styles.cta__wrapper)}>
           <div id="email-form" className={styles['cta-div']}>
             <div className={styles['cta__input-wrapper']}>
-              <a href='/contact'>
+              <Link href='/contact'>
               <input
                 type="submit"
                 value="Let's start"
                 className={cn(styles.cta__button, 'w-button')}
               />
-              </a>
+              </Link>
             </div>
             <div className={styles.cta__disclaimer}>
               We care about protecting your ideas. Here’s our{' '}
-              <a href="#" className={styles['cta__disclamer-link']}>
+              <Link href="#" className={styles['cta__disclamer-link']}>
                 Privacy Policy
-              </a>
+              </Link>
               .
             </div>
           </div>

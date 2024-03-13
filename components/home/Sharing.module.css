@@ -2,6 +2,7 @@
     display: block;
     overflow: hidden;
     padding-top: 113px;
+    padding-bottom: 113px;
     padding-right: 2vw;
     padding-left: 2vw;
     flex-direction: column;
@@ -136,8 +137,8 @@
     }
 
     .sharing__plane-wrapper {
-        right: 20px;
-        width: 30%;
+        right: 40px;
+        width: 50%;
     }
 }
 

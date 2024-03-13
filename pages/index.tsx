@@ -15,10 +15,14 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Codini | Home</title>
+        <title>Home | Codini, you think, we create</title>
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Codini is a software development company that helps businesses grow, by developing and maintaining their websites and mobile apps." />
-        <meta property="og:title" content="Codini | Home" />
+        <meta name="robots" content="all" />
+        <meta
+          property="og:description"
+          content="Codini is a software development company that helps businesses grow, by developing and maintaining their websites and mobile apps."
+        />
+        <meta property="og:title" content="Home | Codini" />
       </Head>
       <Hero />
       <Formating />

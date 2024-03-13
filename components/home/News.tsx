@@ -1,11 +1,10 @@
 import type { NextPage } from 'next';
-
 import cn from "classnames";
 import styles from "./News.module.css";
-
 import CardButtonarrow from "../../assets/icons/card-buttonarrow.svg";
 import { useEffect, useRef } from "react";
 import useAnimation from "../../hooks/useAnimation";
+import Link from 'next/link';
 
 const News: NextPage = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -29,7 +28,7 @@ const News: NextPage = () => {
       <div className={styles.news__wrapper}>
         <div className={styles.news__card}>
           <div className={styles["news__card-content"]}>
-            <a
+            <Link
               href="#"
               className={cn(styles["news__card-linkh"], "w-inline-block")}
             >
@@ -39,21 +38,21 @@ const News: NextPage = () => {
               An average website loads in 2.5 seconds
               </h4>
               <h3 className={styles["news__card-heading"]}>
-              We do it in 2.2 seconds.
+              We do it in 1.5 seconds.
               </h3>
-            </a>
+            </Link>
           </div>
           
           <h5 className={cn(styles["main-color-paragraph"])}>Wanna see it yourself?</h5>
-          <a
-            href="https://pagespeed.web.dev/" target="_blank"
+          <Link
+            href="https://pagespeed.web.dev/analysis/https-www-codini-tn/jld5mwvl5e?form_factor=desktop" target="_blank"
             className={cn(styles["news__card-button"], "w-inline-block")}
           >
             <div className={styles["news__card-buttontext"]}>Speed test</div>
             <div className={cn(styles["news__card-buttonarrow"], "w-embed")}>
               <CardButtonarrow />
             </div>
-          </a>
+          </Link>
         </div>
         <div className={cn(styles.news__card, styles["news__card--purple"])}>
           <div className={styles["news__card-content"]}>
@@ -71,7 +70,7 @@ const News: NextPage = () => {
               </h3>
           </div>
           <h5 className={cn(styles["white-paragraph"],)}>Interested already?</h5>
-          <a
+          <Link
             href="/contact"
             className={cn(styles["news__card-button"], "w-inline-block")}
           >
@@ -92,7 +91,7 @@ const News: NextPage = () => {
             >
               <CardButtonarrow />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

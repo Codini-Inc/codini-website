@@ -20,12 +20,12 @@ function cssLoaderOptions(modules) {
   };
 }
 module.exports = {
-  // images: {
-  //   loader: 'imgix',
-  //   path: '',
-  // },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
   },
   reactStrictMode: true,
   webpack(config) {
