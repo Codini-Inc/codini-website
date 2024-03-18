@@ -17,7 +17,21 @@ const Home: NextPage = () => {
       <Head>
         <title>Home | Codini, you think, we create</title>
         <meta property="og:type" content="website" />
-        <meta name="robots" content="all" />
+        <meta name="title" content="Home | Codini" />
+        <meta
+          name="description"
+          content="Codini is a software development company that helps businesses grow, by developing and maintaining their websites and mobile apps."
+        />
+        <meta
+          name="keywords"
+          content="software,react,development,frontend,backend,web,website,application,mobile,ios,android,nextjs,vuejs,angular,flutter,api,server,deployment,devops,security,ecommerce,payment,tunisia,company,javascript,typescript"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="10 days" />
+        <meta name="author" content="Chadi Ayari" />
+
         <meta
           property="og:description"
           content="Codini is a software development company that helps businesses grow, by developing and maintaining their websites and mobile apps."
