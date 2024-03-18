@@ -29,7 +29,7 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
             onClick={() => handleSelection(ClientType.ENTERPRISE)}
           >
             <img
-              src="https://placehold.co/100x100"
+              src="/images/entreprise.png"
               alt=""
               className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
             />
@@ -41,7 +41,7 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
             onClick={() => handleSelection(ClientType.INDIVIDUAL)}
           >
             <img
-              src="https://placehold.co/100x100"
+              src="/images/individual.png"
               alt=""
               className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
             />
