@@ -22,7 +22,7 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
   return (
     <div className="w-full step h-full">
       <div className="space-y-10 w-full mt-20">
-        <p className="text-center text-5xl font-semibold">Are you </p>
+        <p className="text-center text-4xl font-semibold ">YOU'RE AN</p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-14">
           <div
             className={`max-w-xs w-full flex flex-col justify-center space-y-10`}

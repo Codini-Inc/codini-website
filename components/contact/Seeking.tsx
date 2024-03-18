@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import { ClientType, ClientNeeds } from '../../_enums';
+import Image from 'next/image';
 
 interface SeekingProps {
   setClientNeed: (clientNeed: ClientNeeds) => void;
@@ -26,11 +27,17 @@ export const Seeking: NextPage<SeekingProps> = ({
           role="button"
           onClick={() => handleSelection(ClientNeeds.WEBSITE)}
         >
-          <img
-            src="https://placehold.co/100x100"
-            alt=""
-            className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition-all duration-300"
-          />
+                      <div className=" bg-gradient-to-t from-fuchsia-700 to-blue-500 p-1 rounded-full">
+              <div className="bg-white rounded-full">
+             <Image
+                  src="/images/website.png"
+                  height={200}
+                  width={200}
+                  alt=""
+                  className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
+                />
+           </div>
+            </div>
           <span className="text-center text-2xl font-bold">Website</span>
         </div>
         <div
@@ -38,11 +45,17 @@ export const Seeking: NextPage<SeekingProps> = ({
           role="button"
           onClick={() => handleSelection(ClientNeeds.MOBILE_APP)}
         >
-          <img
-            src="https://placehold.co/100x100"
-            alt=""
-            className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition-all duration-300"
-          />
+                      <div className=" bg-gradient-to-t from-fuchsia-700 to-blue-500 p-1 rounded-full">
+              <div className="bg-white rounded-full">
+           <Image
+                  src="/images/mobile-app.png"
+                  height={200}
+                  width={200}
+                  alt=""
+                  className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
+                />
+                 </div>
+            </div>
           <span className="text-center text-2xl font-bold">Mobile App</span>
         </div>
         <div
@@ -50,11 +63,17 @@ export const Seeking: NextPage<SeekingProps> = ({
           role="button"
           onClick={() => handleSelection(ClientNeeds.CONSULTING)}
         >
-          <img
-            src="https://placehold.co/100x100"
-            alt=""
-            className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition-all duration-300"
-          />
+            <div className=" bg-gradient-to-t from-fuchsia-700 to-blue-500 p-1 rounded-full">
+              <div className="bg-white rounded-full">
+           <Image
+                  src="/images/consultancy.png"
+                  height={200}
+                  width={200}
+                  alt=""
+                  className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
+                />
+                  </div>
+            </div>
           <span className="text-center text-2xl font-bold">Consulting</span>
         </div>
       </div>
