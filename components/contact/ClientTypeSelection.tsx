@@ -1,6 +1,7 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { ClientType, ClientNeeds } from '../../_enums';
-import next from 'next';
+import { useState } from 'react';
+import Image from 'next/image';
 
 interface ClientTypeSelectionProps {
   clientType: ClientType | null;
@@ -28,11 +29,17 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
             role="button"
             onClick={() => handleSelection(ClientType.ENTERPRISE)}
           >
-            <img
-              src="/images/entreprise.png"
-              alt=""
-              className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
-            />
+            <div className=" bg-gradient-to-t from-fuchsia-700 to-blue-500 p-1 rounded-full">
+              <div className="bg-white rounded-full">
+                <Image
+                  src="/images/entreprise.png"
+                  height={200}
+                  width={200}
+                  alt=""
+                  className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
+                />
+              </div>
+            </div>
             <span className="text-center text-2xl font-bold">Enterprise</span>
           </div>
           <div
@@ -40,11 +47,17 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
             role="button"
             onClick={() => handleSelection(ClientType.INDIVIDUAL)}
           >
-            <img
-              src="/images/individual.png"
-              alt=""
-              className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
-            />
+            <div className=" bg-gradient-to-t from-fuchsia-700 to-blue-500 p-1 rounded-full">
+              <div className="bg-white rounded-full">
+                <Image
+                  src="/images/indvidual.png"
+                  height={200}
+                  width={200}
+                  alt=""
+                  className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
+                />
+              </div>
+            </div>
             <span className="text-center text-2xl font-bold">Individual</span>
           </div>
         </div>
