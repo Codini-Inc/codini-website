@@ -161,28 +161,8 @@ export const Contact: React.FC = () => {
         />
       </Head>
       <main className="mt-20 ">
-        {/* steps marker */}
-        <div className="py-3">
-          <div className="flex items-center justify-center gap-8 z-50">
-            {stepsState.map((step, index) => (
-              <div className="relative group" key={index}>
-                <button
-                  className={`w-3 h-3 rounded-full hover:scale-150 transition-all duration-300 ${
-                    step.active ? 'bg-[#1e2a78]' : 'bg-gray-300'
-                  }`}
-                  onClick={() => handleNavigateStep(index)}
-                ></button>
-                <div
-                  className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
-                >
-                  <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md whitespace-nowrap">
-                    {step.name}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      <br></br>
+
         {currentStep === 0 && (
           <div
             className="w-full h-full client-type-selection-step "
@@ -209,6 +189,33 @@ export const Contact: React.FC = () => {
             <ContactForm type={clientType} seeking={clientNeed as ClientNeeds} />
           </div>
         )}
+        <br></br>
+        <br></br>
+
+          {/* steps marker */}
+          <div className="py-3">
+          <div className="flex items-center justify-center gap-8 z-50">
+            {stepsState.map((step, index) => (
+              <div className="relative group" key={index}>
+                <button
+                  className={`w-3 h-3 rounded-full hover:scale-150 transition-all duration-300 ${
+                    step.active ? 'bg-[#1e2a78]' : 'bg-gray-300'
+                  }`}
+                  onClick={() => handleNavigateStep(index)}
+                ></button>
+                <div
+                  className={`absolute top-6 left-1/2 z-50 transform -translate-x-1/2 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`}
+                >
+                  <div className="text-xs font-bold text-white bg-gray-500 px-4 py-2 rounded-md whitespace-nowrap">
+                    {step.name}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <br></br>
+        <br></br>
       </main>
       <Footer />
     </>

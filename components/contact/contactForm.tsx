@@ -51,7 +51,7 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
 
   const hanleAnimateInput = (ref: RefObject<any>) => {
     gsap.to(ref.current, {
-      scale: 1.25,
+      scale: 1.05,
       duration: 0.5,
       ease: 'expo.out',
     });
@@ -161,28 +161,6 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
               ref={inputRef}
             />
           </div>
-
-          <div
-            className="flex flex-col items-start gap-4 bg-white w-full"
-            ref={messageTextareaContainerRef}
-          >
-            <label htmlFor="" className="text-lg font-semibold">
-              Message
-            </label>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              className={cn(
-                'px-4 py-2  text-lg w-full border-none outline-none  rounded-md',
-                contactFormStyles['animated-input'],
-              )}
-              onFocus={() => hanleAnimateInput(messageTextareaContainerRef)}
-              onBlur={() => hanleBlurInput(messageTextareaContainerRef)}
-            ></textarea>
-          </div>
-
           <button
             onClick={submitContact}
             className={cn(

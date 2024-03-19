@@ -40,7 +40,7 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
                 />
               </div>
             </div>
-            <span className="text-center text-2xl font-bold">Enterprise</span>
+            <span className="text-center text-2xl ">Enterprise</span>
           </div>
           <div
             className={`max-w-xs w-full flex flex-col justify-center space-y-10`}
@@ -58,7 +58,7 @@ export const ClientTypeSelection: FC<ClientTypeSelectionProps> = ({
                 />
               </div>
             </div>
-            <span className="text-center text-2xl font-bold">Individual</span>
+            <span className="text-center text-2xl">Individual</span>
           </div>
         </div>
       </div>

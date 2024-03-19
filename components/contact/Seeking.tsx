@@ -38,7 +38,7 @@ export const Seeking: NextPage<SeekingProps> = ({
                 />
            </div>
             </div>
-          <span className="text-center text-2xl font-bold">Website</span>
+          <span className="text-center text-2xl">Website</span>
         </div>
         <div
           className={`max-w-xs w-full flex flex-col justify-center space-y-10 `}
@@ -56,7 +56,7 @@ export const Seeking: NextPage<SeekingProps> = ({
                 />
                  </div>
             </div>
-          <span className="text-center text-2xl font-bold">Mobile App</span>
+          <span className="text-center text-2xl">Mobile App</span>
         </div>
         <div
           className={`max-w-xs w-full flex flex-col justify-center space-y-10 `}
@@ -74,7 +74,7 @@ export const Seeking: NextPage<SeekingProps> = ({
                 />
                   </div>
             </div>
-          <span className="text-center text-2xl font-bold">Consulting</span>
+          <span className="text-center text-2xl">Consultancy</span>
         </div>
       </div>
     </div>
