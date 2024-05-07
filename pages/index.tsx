@@ -6,7 +6,6 @@ import Decks from '../components/home/Decks';
 import Footer from '../components/common/Footer';
 import Formating from '../components/home/Formating';
 import Hero from '../components/home/Hero';
-import Intro from '../components/home/Intro';
 import News from '../components/home/News';
 import Sharing from '../components/home/Sharing';
 import Testimonials from '../components/home/Testimonials';

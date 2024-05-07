@@ -31,8 +31,8 @@ export const Seeking: NextPage<SeekingProps> = ({
               <div className="bg-white rounded-full">
              <Image
                   src="/images/website.png"
-                  height={200}
-                  width={200}
+                  height={100}
+                  width={100}
                   alt=""
                   className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
                 />
@@ -49,8 +49,8 @@ export const Seeking: NextPage<SeekingProps> = ({
               <div className="bg-white rounded-full">
            <Image
                   src="/images/mobile-app.png"
-                  height={200}
-                  width={200}
+                  height={100}
+                  width={100}
                   alt=""
                   className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
                 />
@@ -67,8 +67,8 @@ export const Seeking: NextPage<SeekingProps> = ({
               <div className="bg-white rounded-full">
            <Image
                   src="/images/consultancy.png"
-                  height={200}
-                  width={200}
+                  height={100}
+                  width={100}
                   alt=""
                   className="object-cover w-full h-full rounded-full hover:scale-[1.1] transition duration-300 ease-in-out"
                 />
