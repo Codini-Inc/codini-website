@@ -166,8 +166,8 @@ export const ContactForm: NextPage<ContactForm> = ({ type, seeking }) => {
             className={cn(
               'px-4 py-2 bg-[#334ac0] font-bold text-lg text-white rounded-md w-full focus:outline-none focus:border-blue-200 transition duration-300 ease-in-out hover:bg-[#1e2a78] hover:scale-105 ',
             )}
-          >asdsasd
-            Submit 
+          >
+            Submit
           </button>
         </div>
         <div className={styles['newsletter-cta__disclaimer']}>
