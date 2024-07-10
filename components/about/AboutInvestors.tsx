@@ -79,7 +79,7 @@ const AboutInvestors: NextPage = () => {
           <img
             src="/images/zoom.svg"
             loading="lazy"
-            alt=""
+            alt="zoom"
             className={cn(
               styles['about__investors-logo'],
               styles['about__investors-logo--50space'],
@@ -94,7 +94,7 @@ const AboutInvestors: NextPage = () => {
           <img
             src="/images/instagram.svg"
             loading="lazy"
-            alt=""
+            alt="instagram logo"
             className={cn(
               styles['about__investors-logo'],
               styles['about__investors-logo--27space'],
