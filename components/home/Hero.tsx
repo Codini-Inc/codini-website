@@ -30,7 +30,7 @@ const Hero: NextPage = () => {
       start: 0,
       end: 37,
     });
-  }, );
+  });
 
   return (
     <div className={cn(styles.hero)}>
@@ -45,7 +45,7 @@ const Hero: NextPage = () => {
               </h5>
               <div className={styles.hero__headline}>
                 <h1 className={styles['hero__headline-text']}>
-                 You think, We create
+                  You think, We create
                 </h1>
                 <img
                   src="/images/hero-hands.png"
@@ -60,8 +60,8 @@ const Hero: NextPage = () => {
                   loading="eager"
                   alt=""
                   className={styles.hero__ui}
-                  width="2808"
-                  height="1701"
+                  width={1000}
+                  height={500}
                 />
               </div>
             </div>

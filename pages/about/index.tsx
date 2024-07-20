@@ -6,7 +6,6 @@ import cn from 'classnames';
 
 import navStyles from '../../components/common/Nav.module.css';
 import styles from './About.module.css';
-import AboutCulture from '../../components/about/AboutCulture';
 import AboutHeading from '../../components/about/AboutHeading';
 import AboutHero from '../../components/about/AboutHero';
 import AboutIntro from '../../components/about/AboutIntro';
@@ -14,10 +13,10 @@ import AboutInvestors from '../../components/about/AboutInvestors';
 import AboutJobs from '../../components/about/AboutJobs';
 import AboutNumbers from '../../components/about/AboutNumbers';
 import AboutParagraph1 from '../../components/about/AboutParagraph1';
-import AboutParagraph2 from '../../components/about/AboutParagraph2';
 import AboutTeam from '../../components/about/AboutTeam';
 import Cta from '../../components/common/Cta';
 import Footer from '../../components/common/Footer';
+import AboutOutro from '../../components/about/AboutOutro';
 
 const About: NextPage = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -46,12 +45,11 @@ const About: NextPage = () => {
           <AboutHeading />
           <AboutParagraph1 />
           <AboutTeam />
-          <AboutParagraph2 />
-          <AboutCulture />
-          <AboutInvestors />
+          {/* <AboutInvestors /> */}
+          <AboutOutro />
         </div>
-        <AboutNumbers />
-        <AboutJobs />
+        {/* <AboutNumbers /> */}
+        {/* <AboutJobs /> */}
         <Cta />
         <Footer />
       </div>

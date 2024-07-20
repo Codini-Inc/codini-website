@@ -7,6 +7,16 @@
     background-image: linear-gradient(180deg, #fff 73%, #f6f6f6);
 }
 
+
+.about-outro {
+    z-index: 1;
+    display: flex;
+    padding: 103px 10vw 95px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .about-intro__wrapper {
     max-width: 100em;
     margin-right: auto;
@@ -37,6 +47,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     .about-intro__paragraph {
         font-size: 1.3em;
         line-height: 1.8em;

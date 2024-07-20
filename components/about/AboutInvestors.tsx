@@ -6,7 +6,7 @@ import styles from './AboutInvestors.module.css';
 const AboutInvestors: NextPage = () => {
   return (
     <div className={styles.about__investors}>
-      <h2 className={styles['about__investors-heading']}>Our Investors</h2>
+      <h2 className={styles['about__investors-heading']}>Our Clients</h2>
       <div className={styles['about__investors-container']}>
         <div className={styles['about__investors-wrapper']}>
           <img

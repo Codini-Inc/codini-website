@@ -25,18 +25,18 @@ const Formating: NextPage = () => {
       scrub: false,
       delay: 1,
     });
-  }, );
+  });
 
   return (
     <div ref={ref} className={cn(styles.formatting, 'wf-section')}>
       <div className={styles.formatting__wrapper}>
-      {/* <div className={styles.formatting__lottie}></div> */}
+        {/* <div className={styles.formatting__lottie}></div> */}
         <Image
-        src="/images/dart.gif"
-        alt=""
-        className={styles['about__culture-photo']}
-        width="528"
-        height="480"
+          src="/images/dart.gif"
+          alt=""
+          className={styles['about__culture-photo']}
+          width={500}
+          height={400}
         />
         {/* 213.186.33.5 */}
         <div className={styles.formatting__text}>
@@ -49,7 +49,7 @@ const Formating: NextPage = () => {
               styles['formatting__paragraph--space'],
             )}
           >
-              We do it in 30 days.
+            We do it in 30 days.
             <br />
           </h2>
         </div>

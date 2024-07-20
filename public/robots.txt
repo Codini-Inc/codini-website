@@ -1,9 +1,10 @@
 # Block all crawlers for /accounts
 User-agent: *
-Disallow: /api/
+Disallow: /login/
+Disallow: /admin/
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://www.codini.tn/sitemap.xml
+Sitemap: https://www.milkdfromplants.com/sitemap.xml

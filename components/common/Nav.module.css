@@ -60,6 +60,7 @@
 .nav__menu {
     display: flex;
     align-items: flex-end;
+    padding-top: 5px;
 }
 
 .nav__link {

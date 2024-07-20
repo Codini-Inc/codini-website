@@ -7,15 +7,10 @@ const AboutParagraph1: NextPage = () => {
   return (
     <div className={styles['about__paragraph1-wrapper']}>
       <p className={styles.about__paragraph1}>
-        When we needed Codini, it wasn’t there. So we built it. We rethought
-        presentations from the ground up: how we create them, how we use them,
-        and how we share them. Codini is answering years of frustrations about
-        how hard it is to bring ideas to life, easily and in style.
-        <br />
-        <br />
-        We are a team of eight co-founders who previously built Wunderlist.
-        Codini is the modern presentation software we wish we had: designed to
-        improve the way presentations are crafted and knowledge is shared.
+        Codini began with a belief that when people come together around an
+        idea, great things can happen. Great is more than the sum of its parts:
+        just like a great team is more than a collection of individuals and
+        great applications are more than a collection of files.
       </p>
     </div>
   );

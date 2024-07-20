@@ -70,6 +70,18 @@ const Nav: NextPage = () => {
               <div className={styles.nav__link}>Home</div>
             </Link>
             <Link
+              href="/about"
+              className={cn(
+                styles['nav__link-div'],
+                styles['nav__link-div--black'],
+                styles['nav__link-div--space'],
+                'w-inline-block',
+                { [styles['w--current']]: router.pathname === '/about' },
+              )}
+            >
+              <div className={styles.nav__link}>About</div>
+            </Link>
+            <Link
               href="/contact"
               className={cn(
                 styles['nav__link-div'],

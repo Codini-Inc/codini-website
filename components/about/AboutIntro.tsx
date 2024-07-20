@@ -12,16 +12,10 @@ const AboutIntro: NextPage = () => {
           community. Transform the world. But ideas alone are not enough.
           <br />‍<br />
           Codini began with a belief that when people come together around an
-          idea, and are empowered by the right software, great things can
-          happen. Great is more than the sum of its parts: just like a great
-          team is more than a collection of individuals and great presentations
-          are more than a collection of slides. Great is a little slice of magic
-          (and you know it when you see it).
+          idea, great things can happen. Great is more than the sum of its
+          parts: just like a great team is more than a collection of individuals
+          and great presentations are more than a collection of slides.
           <br />
-          <br />
-          Great software drives our modern lives. We use Slack, not email. We
-          jump on a Zoom call, not on the phone. So why are we still using
-          presentation software that was designed last century?
         </p>
       </div>
     </div>

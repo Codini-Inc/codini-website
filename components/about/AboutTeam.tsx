@@ -4,6 +4,7 @@ import cn from 'classnames';
 import styles from './AboutTeam.module.css';
 import Twitter from '../../assets/icons/instagram.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
+import Image from 'next/image';
 
 const AboutTeam: NextPage = () => {
   return (
@@ -13,9 +14,7 @@ const AboutTeam: NextPage = () => {
           className={cn(styles['about__wrapper-teammember'], styles.christian)}
         >
           <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>
-              Christian Reber
-            </h4>
+            <h4 className={styles['about__name-teammember']}>Chadi Ayari</h4>
             <div className={styles['about__role-teammember']}>
               Founder &amp; CEO
             </div>
@@ -78,25 +77,21 @@ const AboutTeam: NextPage = () => {
           </div>
           <div className={styles['about__overlay-teammember']}></div>
           <img
-            src="/images/christian.jpg"
-            width="1260"
-            height="960"
-            alt=""
+            src="/images/chadi.jpg"
+            width={900}
+            height={500}
+            alt="Chadi Ayari, CEO & Founder"
             className={styles['about__photo-teammember']}
           />
         </div>
         <div className={styles['about__wrapper-teammember']}>
           <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>
-              Charlette Prevot
-            </h4>
-            <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; Head of Operations
-            </div>
+            <h4 className={styles['about__name-teammember']}>Jihed Khelifi</h4>
+            <div className={styles['about__role-teammember']}>CTO</div>
           </div>
           <div className={styles['about__overlay-teammember']}></div>
           <img
-            src="/images/charlette.jpg"
+            src="/images/jihed.jpeg"
             alt=""
             className={styles['about__photo-teammember']}
             width="600"
@@ -105,9 +100,9 @@ const AboutTeam: NextPage = () => {
         </div>
         <div className={styles['about__wrapper-teammember']}>
           <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>Jan Martin</h4>
+            <h4 className={styles['about__name-teammember']}>Souha Nouisser</h4>
             <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; Designer
+              Marketing Manager
             </div>
             <div className={styles['about__socialwrapper-teammember']}>
               <a
@@ -127,100 +122,20 @@ const AboutTeam: NextPage = () => {
           </div>
           <div className={styles['about__overlay-teammember']}></div>
           <img
-            src="/images/jan.jpg"
+            src="/images/souha.jpeg"
             alt=""
             className={styles['about__photo-teammember']}
             width="600"
             height="456"
-          />
-        </div>
-        <div className={styles['about__wrapper-teammember']}>
-          <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>Eric Labod</h4>
-            <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; QA Engineer
-            </div>
-            <div className={styles['about__socialwrapper-teammember']}>
-              <a
-                href="#"
-                className={cn(
-                  styles['about__sociallink-teammember'],
-                  'w-inline-block',
-                )}
-              >
-                <div
-                  className={cn(styles['about__smicon-teammember'], 'w-embed')}
-                >
-                  <Linkedin />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div className={styles['about__overlay-teammember']}></div>
-          <img
-            src="/images/eric.jpg"
-            alt=""
-            className={styles['about__photo-teammember']}
-            width="600"
-            height="456"
-          />
-        </div>
-        <div className={styles['about__wrapper-teammember']}>
-          <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>Marvin Labod</h4>
-            <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; Software Engineer
-              <br />
-            </div>
-          </div>
-          <div className={styles['about__overlay-teammember']}></div>
-          <img
-            src="/images/marvin.jpg"
-            alt=""
-            className={styles['about__photo-teammember']}
-            width="600"
-            height="456"
-          />
-        </div>
-        <div className={cn(styles['about__wrapper-teammember'], styles.adam)}>
-          <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>Adam Renklint</h4>
-            <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; CTO
-              <br />
-            </div>
-            <div className={styles['about__socialwrapper-teammember']}>
-              <a
-                href="#"
-                className={cn(
-                  styles['about__sociallink-teammember'],
-                  'w-inline-block',
-                )}
-              >
-                <div
-                  className={cn(styles['about__smicon-teammember'], 'w-embed')}
-                >
-                  <Twitter />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div className={styles['about__overlay-teammember']}></div>
-          <img
-            src="/images/adam.jpg"
-            width="1260"
-            height="961"
-            alt=""
-            className={styles['about__photo-teammember']}
           />
         </div>
       </div>
       <div className={cn(styles['about__2photos-wrapper'], styles.vanessa)}>
         <div className={styles['about__wrapper-teammember']}>
           <div className={styles['about__infowrapper-teammember']}>
-            <h4 className={styles['about__name-teammember']}>Vanessa Stock</h4>
+            <h4 className={styles['about__name-teammember']}>Aziz Nouisser</h4>
             <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; Head of HR
+              Full stack developer
               <br />
             </div>
             <div className={styles['about__socialwrapper-teammember']}>
@@ -241,7 +156,7 @@ const AboutTeam: NextPage = () => {
           </div>
           <div className={styles['about__overlay-teammember']}></div>
           <img
-            src="/images/vanessa.jpg"
+            src="/images/aziz.jpeg"
             alt=""
             className={styles['about__photo-teammember']}
             width="600"
@@ -251,11 +166,11 @@ const AboutTeam: NextPage = () => {
         <div className={cn(styles['about__wrapper-teammember'], styles.misha)}>
           <div className={styles['about__infowrapper-teammember']}>
             <h4 className={styles['about__name-teammember']}>
-              Misha Karpenko
+              Fatma Ben Hlima
               <br />
             </h4>
             <div className={styles['about__role-teammember']}>
-              Co-Founder &amp; Software Engineer
+              Designer
               <br />
             </div>
             <div className={styles['about__socialwrapper-teammember']}>
@@ -276,7 +191,7 @@ const AboutTeam: NextPage = () => {
           </div>
           <div className={styles['about__overlay-teammember']}></div>
           <img
-            src="/images/misha.jpg"
+            src="/images/fatma.jpeg"
             alt=""
             className={styles['about__photo-teammember']}
             width="600"
