@@ -13,25 +13,25 @@ const Footer: NextPage = () => {
     <div className={cn(styles.footer, 'wf-section')}>
       <div className={styles.footer__wrapper}>
         <div className={styles.footer__credits}>
-          
-            <Link
-            href="/"
-              aria-current="page"
-            >
-              <div className={cn(styles['footer__logo-image1'], 'w-embed')}>
-                <Image       
-                  src="/images/logo-description-dark.png"
-                  alt="Codini main dark logo"
-                  width={200}
-                  height={50}
-                />
-              </div>
-            </Link>
+          <Link href="/" aria-current="page">
+            <div className={cn(styles['footer__logo-image1'], 'w-embed')}>
+              <Image
+                src="/images/logo-description-dark.png"
+                alt="Codini main dark logo"
+                width={200}
+                height={50}
+              />
+            </div>
+          </Link>
           <div className={styles.footer__copyright}>
             © Copyright 2024 Codini.
           </div>
-          <div >
-            <Link href="mailto: contact@codini.tn" className={styles.footer__link} aria-label="Mail">
+          <div>
+            <Link
+              href="mailto: contact@codini.tn"
+              className={styles.footer__link}
+              aria-label="Mail"
+            >
               contact@codini.tn
             </Link>
           </div>
@@ -46,13 +46,17 @@ const Footer: NextPage = () => {
           >
             Home
           </Link>
-          <Link
-            href="/contact"
-            className={styles.footer__link}>Contact</Link>
+          <Link href="/contact" className={styles.footer__link}>
+            Contact
+          </Link>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Legal</h6>
-          <Link href="#" className={styles.footer__link} aria-label="Legal notice">
+          <Link
+            href="#"
+            className={styles.footer__link}
+            aria-label="Legal notice"
+          >
             Legal Notice
           </Link>
           <Link href="#" className={styles.footer__link}>
@@ -64,7 +68,7 @@ const Footer: NextPage = () => {
           <div className={styles['footer__sm-wrapper']}>
             <Link
               href="https://www.facebook.com/people/Codinitn/61556850401856/"
-              target='_blank'
+              target="_blank"
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
               aria-label="Facebook"
             >
@@ -74,17 +78,17 @@ const Footer: NextPage = () => {
             </Link>
             <Link
               href="https://www.instagram.com/codini.tn/"
-              target='_blank'
+              target="_blank"
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
               aria-label="Instagram"
             >
               <div className={cn(styles['footer__sm-icon'], 'w-embed')}>
-              <Instagram />
+                <Instagram />
               </div>
             </Link>
             <Link
-              href="#"
-              target='_blank'
+              href="https://www.linkedin.com/company/codini-tn/"
+              target="_blank"
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
               aria-label="Linkedin"
             >
@@ -94,7 +98,7 @@ const Footer: NextPage = () => {
             </Link>
             <Link
               href="https://www.tiktok.com/@codini.tn"
-              target='_blank'
+              target="_blank"
               className={cn(styles['footer__sm-link'], 'w-inline-block')}
               aria-label="TikTok"
             >
