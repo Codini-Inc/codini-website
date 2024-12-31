@@ -18,7 +18,7 @@ const BlogEssential: NextPage = () => {
       duration: 0.4,
       stagger: 0.4,
     });
-  }, );
+  });
 
   return (
     <div ref={ref} className={cn(styles['blog-essential'], 'wf-section')}>
@@ -31,7 +31,7 @@ const BlogEssential: NextPage = () => {
             href="#"
             className={cn(styles['blog-essential__article'], 'w-inline-block')}
           >
-            <h1 className={styles['blog-essential__article-nr']}>01.</h1>
+            <h2 className={styles['blog-essential__article-nr']}>01.</h2>
             <h4
               data-w-id="2b152e60-a21e-7b36-f240-d6e8e164b322"
               className={styles['blog-essential__article-heading']}
@@ -44,7 +44,7 @@ const BlogEssential: NextPage = () => {
             href="#"
             className={cn(styles['blog-essential__article'], 'w-inline-block')}
           >
-            <h1 className={styles['blog-essential__article-nr']}>02.</h1>
+            <h2 className={styles['blog-essential__article-nr']}>02.</h2>
             <h4
               data-w-id="6242d60b-8b8e-cd1a-ba32-bcbc45d59285"
               className={styles['blog-essential__article-heading']}
@@ -57,7 +57,7 @@ const BlogEssential: NextPage = () => {
             href="#"
             className={cn(styles['blog-essential__article'], 'w-inline-block')}
           >
-            <h1 className={styles['blog-essential__article-nr']}>03.</h1>
+            <h2 className={styles['blog-essential__article-nr']}>03.</h2>
             <h4
               data-w-id="fe271954-2026-6bf2-68df-6a332a5a0bf7"
               className={styles['blog-essential__article-heading']}
@@ -70,7 +70,7 @@ const BlogEssential: NextPage = () => {
             href="#"
             className={cn(styles['blog-essential__article'], 'w-inline-block')}
           >
-            <h1 className={styles['blog-essential__article-nr']}>04.</h1>
+            <h2 className={styles['blog-essential__article-nr']}>04.</h2>
             <h4
               data-w-id="b2378eb6-bb8c-bb15-b19b-343d2b979762"
               className={styles['blog-essential__article-heading']}
