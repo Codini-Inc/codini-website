@@ -12,6 +12,11 @@ class MyDocument extends Document {
             src="https://www.googletagmanager.com/gtag/js?id=G-XFFP78MNG4"
           ></script>
           <script
+            defer
+            data-domain="codini.tn"
+            src="https://plausible.io/js/script.js"
+          ></script>
+          <script
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];
