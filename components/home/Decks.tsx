@@ -218,47 +218,6 @@ const Decks: NextPage = () => {
             // height="405"
           />
         </div>
-        <div className={cn(styles.decks__grid, styles['decks__grid--margin'])}>
-          <img
-            src="/images/slide26_720w.png"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide27_720w.png"
-            srcSet="/images/slide27_720w-p-500.png 500w, /images/slide27_720w.png 720w"
-            sizes="(max-width: 479px) 24vw, (max-width: 991px) 16vw, (max-width: 1919px) 15vw, 16vw"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide28_720w.jpg"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide29_720w.png"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide30_720w.jpg"
-            srcSet="/images/slide30_720w-p-500.jpeg 500w, /images/slide30_720w.jpg 720w"
-            sizes="(max-width: 479px) 24vw, (max-width: 991px) 16vw, (max-width: 1919px) 15vw, 16vw"
-            alt=""
-            className={styles.decks__img}
-            // width="720"
-            // height="405"
-          />
-        </div>
         <div className={styles.decks__grid}>
           <img
             src="/images/slide31_720w.jpg"
