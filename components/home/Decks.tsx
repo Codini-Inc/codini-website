@@ -71,23 +71,10 @@ const Decks: NextPage = () => {
   return (
     <div className={cn(styles.decks, 'wf-section')}>
       <div ref={decksTextRef} className={styles.decks__text}>
-        <h2 className={styles['decks__text-heading']}>
-          Our latest projects
-        </h2>
+        <h2 className={styles['decks__text-heading']}>Our latest projects</h2>
         <p className={styles['decks__text-paragraph']}>
-          We've created a mobile app in Miami, a CMS in Belgrade, a SAAS in Mumbai, a Webapp in Tunisia. <br></br>
+          We've created mobile apps, CMSs, SAASs, and Webapps. <br></br>
         </p>
-        <center>
-        <Link
-            href="#"
-            className={cn(styles['news__card-button'], 'w-inline-block')}
-          >
-            <div className={styles['news__card-buttontext']}><b>Discover our projects!</b></div>
-            <div className={cn(styles['news__card-buttonarrow'], 'w-embed')}>
-              <CardButtonarrow />
-            </div>
-          </Link>
-          </center>
       </div>
       <div ref={decksWrapperRef} className={styles.decks__wrapper}>
         <div className={cn(styles.decks__grid, styles['decks__grid--margin'])}>
@@ -188,43 +175,6 @@ const Decks: NextPage = () => {
           />
           <img
             src="/images/slide15_720w.png"
-            alt=""
-            className={styles.decks__img}
-            // width="720"
-            // height="405"
-          />
-        </div>
-        <div className={cn(styles.decks__grid, styles['decks__grid--margin'])}>
-          <img
-            src="/images/slide16_720w.png"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide17_720w.jpg"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide18_720w.jpg"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide19_720w.png"
-            alt=""
-            className={cn(styles.decks__img, styles['decks__img--margin'])}
-            // width="720"
-            // height="405"
-          />
-          <img
-            src="/images/slide20_720w.jpg"
             alt=""
             className={styles.decks__img}
             // width="720"
