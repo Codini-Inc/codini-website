@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        has: [{ type: 'host', value: 'codini.tn' }],
+        destination: 'https://www.codini.tn',
+        permanent: true,
+      },
+    ];
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
