@@ -60,6 +60,10 @@ const Footer: NextPage = () => {
             Contact
           </Link>
         </div>
+        <div className={styles['footer__links-wrapper']}>
+          <h6 className={styles.footer__heading}>Adress</h6>
+          <p>Nabel 8000, Tunisia</p>
+        </div>
         <div className={styles.footer__sm}>
           <h6 className={styles.footer__heading}>Follow us</h6>
           <div className={styles['footer__sm-wrapper']}>
