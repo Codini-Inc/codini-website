@@ -35,6 +35,16 @@ const Footer: NextPage = () => {
               contact@codini.tn
             </Link>
           </div>
+          <div>
+            <Link
+              href="tel:+21653180256"
+              target="_blank"
+              className={styles.footer__link}
+              aria-label="Phone"
+            >
+              +216 53180256
+            </Link>
+          </div>
         </div>
         <div className={styles['footer__links-wrapper']}>
           <h6 className={styles.footer__heading}>Company</h6>
@@ -48,19 +58,6 @@ const Footer: NextPage = () => {
           </Link>
           <Link href="/contact" className={styles.footer__link}>
             Contact
-          </Link>
-        </div>
-        <div className={styles['footer__links-wrapper']}>
-          <h6 className={styles.footer__heading}>Legal</h6>
-          <Link
-            href="#"
-            className={styles.footer__link}
-            aria-label="Legal notice"
-          >
-            Legal Notice
-          </Link>
-          <Link href="#" className={styles.footer__link}>
-            Privacy Policy
           </Link>
         </div>
         <div className={styles.footer__sm}>
