@@ -51,34 +51,33 @@ const NavDropdown = ({
       //   style="height: 971px; display: block;"
     >
       <nav role="navigation" className={cn(styles.nav__menu, 'w-nav-menu')}>
-        
-          <Link
-            href="/"
-            className={cn(
-              styles['nav__link-div'],
-              styles['nav__link-div--white'],
-              styles.space,
-              styles['w-inline-block'],
-              { [styles['w--current']]: router.pathname === '/' },
-            )}
-          >
-            <div className={styles.nav__link}>Home</div>
-          </Link>
-        
-          <Link
-            href="/contact"
-            aria-current="page"
-            className={cn(
-              styles['nav__link-div'],
-              styles['nav__link-div--white'],
-              styles.space,
-              'w-inline-block',
-              'w--current',
-              { [styles['w--current']]: router.pathname === '/contact' },
-            )}
-          >
-            <div className={styles.nav__link}>Contact</div>
-          </Link>
+        <Link
+          href="/"
+          className={cn(
+            styles['nav__link-div'],
+            styles['nav__link-div--white'],
+            styles.space,
+            styles['w-inline-block'],
+            { [styles['w--current']]: router.pathname === '/' },
+          )}
+        >
+          <div className={styles.nav__link}>Home</div>
+        </Link>
+
+        <Link
+          href="/contact"
+          aria-current="page"
+          className={cn(
+            styles['nav__link-div'],
+            styles['nav__link-div--white'],
+            styles.space,
+            'w-inline-block',
+            'w--current',
+            { [styles['w--current']]: router.pathname === '/contact' },
+          )}
+        >
+          <div className={styles.nav__link}>Contact</div>
+        </Link>
       </nav>
     </div>
   );
