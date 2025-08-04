@@ -26,6 +26,10 @@ const Home: NextPage = () => {
           name="keywords"
           content="software,react,development,frontend,backend,web,website,application,mobile,ios,android,nextjs,vuejs,angular,flutter,api,server,deployment,devops,security,ecommerce,payment,tunisia,company,javascript,typescript"
         />
+        <meta
+          name="facebook-domain-verification"
+          content="d4oksf4yh33baombgdskbrexutss8s"
+        />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
